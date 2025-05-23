@@ -97,6 +97,28 @@ video.bg-video {
   /* .bg-dark is from HTML */
 }
 
+/* Bootstrap styles for navbar-expand-lg */
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important; /* Use !important to ensure override if necessary, though ideally not needed */
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
 .navbar .navbar-brand,
 .navbar .nav-link {
   color: rgba(255, 255, 255, 0.8);
@@ -168,7 +190,7 @@ video.bg-video {
 }
 
 #about img {
-  max-width: 450px; /* Constrain max-width for very large screens */
+  max-width: 550px; /* Adjusted for more flexibility with wider images */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -257,11 +279,14 @@ video.bg-video {
   }
 }
 
-@media (max-width: 767.98px) {
-    .navbar-nav {
+@media (max-width: 991.98px) { /* Adjusted to match -lg breakpoint */
+    .navbar-collapse.collapse.show, .navbar-collapse.collapsing {
         background-color: rgba(0,0,0,0.85); 
         padding: 0.5rem 0;
         border-radius: 0.25rem; 
+    }
+    .navbar-nav {
+        flex-direction: column; /* Ensure it's column on mobile when expanded */
     }
     .navbar-nav .nav-item {
         padding-left: 1rem; 
