@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Coming Soon - Start Bootstrap Theme</title>
+        <title>My Landing Page</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -22,49 +22,88 @@
         <!-- Masthead-->
         <div class="masthead">
             <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
-                    <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">My Website</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </nav>
+                <div class="container-fluid px-4 px-lg-0">
+                    <div id="services">
+                        <h2 class="text-center my-4">Our Services</h2>
+                        <div class="row">
+                            <div class="col-lg-4 service-item text-center">
+                                <img src="assets/img/it-consulting.jpg" alt="IT Consulting" class="img-fluid mb-3">
+                                <h3>IT Consulting</h3>
+                                <p>Expert advice to help you leverage technology for your business goals.</p>
+                            </div>
+                            <div class="col-lg-4 service-item text-center">
+                                <img src="assets/img/mobile-app-dev.jpg" alt="Mobile App Development" class="img-fluid mb-3">
+                                <h3>Mobile App Development</h3>
+                                <p>Custom mobile applications for iOS and Android platforms.</p>
+                            </div>
+                            <div class="col-lg-4 service-item text-center">
+                                <img src="assets/img/web-dev.jpg" alt="Website Development" class="img-fluid mb-3">
+                                <h3>Website Development</h3>
+                                <p>Modern and responsive websites tailored to your needs.</p>
                             </div>
                         </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
+                    </div>
+                    <div id="about">
+                        <h2 class="text-center my-4">About Us</h2>
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 text-center">
+                                <img src="assets/img/about-us.jpg" alt="About Us" class="img-fluid mb-4 rounded mx-auto d-block">
+                                <p>We are a passionate team dedicated to providing top-notch IT solutions, including innovative mobile apps and professional websites for sole traders and small businesses.</p>
+                                <p>With years of experience in the industry, we deliver high-quality products and services that help our clients succeed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact">
+                        <h2 class="text-center my-4">Contact Us</h2>
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nameInput" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="nameInput" placeholder="Your Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailInput" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="messageTextarea" class="form-label">Message</label>
+                                        <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                                <p class="text-center mt-3">Or reach us at: contact@yourbusiness.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Social Icons-->
         <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
         <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+            <div class="d-flex flex-row justify-content-center align-items-center">
                 <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
