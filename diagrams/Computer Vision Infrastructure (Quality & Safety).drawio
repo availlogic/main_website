@@ -1,0 +1,163 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="MNlKFoL3D_U69IKSCWKM" name="Page-1">
+    <mxGraphModel dx="1426" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-1" value="Operational Systems" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1269" width="612" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-2" value="Computer Vision Platform" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="652" y="174" width="763" height="1399" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-3" value="Visual Data Sources" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="680" y="20" width="767" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-4" value="Fixed Camera Streams" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="715" y="45" width="220" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-5" value="Drone Feeds" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="985" y="45" width="148" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-6" value="Existing Image Datasets" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1183" y="45" width="229" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-7" value="Multi-Source Video/Image Ingestion" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="880" y="199" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-8" value="Preprocessing &amp; Annotation Layer" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="880" y="327" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-9" value="High-Quality Training Sets" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="910" y="455" width="200" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-10" value="Advanced Model Training Environments &#xa;(CNN, YOLO, Vision Transformers)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="793" y="590" width="260" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-11" value="Flexible Deployment Architecture" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="784" y="766" width="278" height="278" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-12" value="Edge Device Inference Layer &#xa;(Low Latency)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="691" y="1117" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-13" value="Cloud GPU Inference Layer &#xa;(High Throughput)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1001" y="1129" width="253" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-14" value="Continuous Learning Workflow" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1119" y="1470" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-15" value="Real-Time Alerting Dashboard" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="1294" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-16" value="Core ERP / MES Systems" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="365" y="1306" width="232" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.07;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-4" target="Lv_AD-Gccd-MpJe4NVeE-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="825" y="174" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.62;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-5" target="Lv_AD-Gccd-MpJe4NVeE-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1059" y="174" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.13;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-6" target="Lv_AD-Gccd-MpJe4NVeE-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1298" y="174" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-20" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-7" target="Lv_AD-Gccd-MpJe4NVeE-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-21" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-8" target="Lv_AD-Gccd-MpJe4NVeE-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.23;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-9" target="Lv_AD-Gccd-MpJe4NVeE-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="923" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-10" target="Lv_AD-Gccd-MpJe4NVeE-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.21;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-11" target="Lv_AD-Gccd-MpJe4NVeE-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="821" y="1081" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-25" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.93;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-11" target="Lv_AD-Gccd-MpJe4NVeE-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1128" y="1081" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-26" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.31;exitY=1;entryX=1;entryY=0.31;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-12" target="Lv_AD-Gccd-MpJe4NVeE-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="749" y="1244" />
+              <mxPoint x="749" y="1269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.06;exitY=1;entryX=1;entryY=0.35;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-13" target="Lv_AD-Gccd-MpJe4NVeE-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="912" y="1244" />
+              <mxPoint x="912" y="1269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.95;entryX=1;entryY=0.25;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-12" target="Lv_AD-Gccd-MpJe4NVeE-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1035" y="1244" />
+              <mxPoint x="1035" y="1269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-29" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.64;exitY=1;entryX=1;entryY=0.31;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-13" target="Lv_AD-Gccd-MpJe4NVeE-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1198" y="1244" />
+              <mxPoint x="1198" y="1269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-30" value="Human Verification" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.05;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-15" target="Lv_AD-Gccd-MpJe4NVeE-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="1397" />
+              <mxPoint x="972" y="1434" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lv_AD-Gccd-MpJe4NVeE-31" value="New Examples" style="curved=1;startArrow=none;endArrow=block;exitX=0.59;exitY=0;entryX=1;entryY=0.78;rounded=0;" edge="1" parent="1" source="Lv_AD-Gccd-MpJe4NVeE-14" target="Lv_AD-Gccd-MpJe4NVeE-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1295" y="1434" />
+              <mxPoint x="1295" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

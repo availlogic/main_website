@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvailLogic - Case Study: ECI</title>
+    <link rel="icon" href="../assets/logo_nobg_filled.png" type="image/png">
+    <meta name="description" content="Case study on powering a retail giant with a unified data asset platform.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <header class="container mx-auto max-w-6xl px-6 py-6 flex justify-between items-center relative">
+        <!-- Brand Logo -->
+        <a href="../index.html" class="z-20 flex items-center">
+            <img src="../assets/logo_nobg_filled.png" alt="AvailLogic Logo" class="h-8 mr-3">
+            <h1 class="text-3xl font-bold text-white">
+                Avail<span class="text-cyan-400">Logic</span>
+            </h1>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8" id="desktop-nav">
+            <a href="../index.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="../services.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Services</a>
+            <a href="../case-studies.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300 active">Case Studies</a>
+            <a href="../about.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">About Us</a>
+            <a href="../blog.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Resources</a>
+        </nav>
+        <a href="../contact.html" class="hidden md:inline-block bg-cyan-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-cyan-600 transition duration-300">
+            Contact Us
+        </a>
+        <button id="mobile-menu-button" class="md:hidden z-20 text-white p-2 -mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+        <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full h-screen bg-slate-900 bg-opacity-95 backdrop-blur-sm hidden flex-col items-center justify-center space-y-8 text-2xl z-10">
+            <a href="../index.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="../services.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Services</a>
+            <a href="../case-studies.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300 active">Case Studies</a>
+            <a href="../about.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">About Us</a>
+            <a href="../blog.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Resources</a>
+            <a href="../contact.html" class="nav-link bg-cyan-500 text-white font-medium py-3 px-8 rounded-lg hover:bg-cyan-600 transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-4xl px-6">
+        <section class="py-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight text-center">
+                Powering a Retail Giant with a Unified Data Asset Platform
+            </h2>
+
+            <div class="mt-12 bg-slate-800 rounded-2xl p-8">
+                <h3 class="text-2xl font-bold text-white">At a Glance</h3>
+                <div class="mt-6 grid md:grid-cols-2 gap-8 text-slate-300">
+                    <div>
+                        <p class="font-semibold text-white">Client</p>
+                        <p>A leading European retail conglomerate, one of the largest department store groups in the world.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white">Challenge</p>
+                        <p>A fragmented and siloed data landscape hindered digital transformation and a single customer view.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white">Solution</p>
+                        <p>An architected and implemented Unified Data Asset Platform, establishing a central "data factory" for the enterprise.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white">Outcome</p>
+                        <p>Achieved a true 360-degree customer view, breaking down data silos and creating a single, trusted source of truth to accelerate innovation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-slate-300 text-lg space-y-6">
+                <div>
+                    <h3 class="text-3xl font-bold text-white">Introduction</h3>
+                    <p class="mt-4">Our client is one of Europe's largest and most prestigious retail conglomerates. With a history spanning decades, the group has grown into a diversified powerhouse, operating hundreds of physical stores, a massive e-commerce platform, travel agencies, insurance services, and more.</p>
+                    <p class="mt-4">This diversification, while a key to their commercial success, had created an immense technical challenge. The client possessed one of the richest and most valuable data sets in the industry—spanning retail transactions, online behaviour, travel bookings, and customer service interactions. However, this data was locked away in disparate, disconnected systems.</p>
+                    <p class="mt-4">Recognising that data was the key to their future, the client embarked on an ambitious digital transformation journey. They understood that to compete, they needed to unify their data assets and implement holistic, group-wide data governance.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-white mt-12">The Challenge: A Data-Rich Company Starved of Insight</h3>
+                    <p class="mt-4">The client's core challenge was fragmentation. An IT landscape built over decades to support different business lines meant that data was trapped in silos. There was no "single source of truth."</p>
+                    <p class="mt-4">This central problem manifested in several critical business-facing issues:</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside">
+                        <li><strong>No Single Customer View:</strong> A customer appeared as three separate individuals across different divisions, making true personalisation impossible.</li>
+                        <li><strong>Inconsistent & Untrusted Data:</strong> Different departments had different definitions for the same fundamental metrics, leading to arguments over data accuracy.</li>
+                        <li><strong>Inefficiency and Redundancy:</strong> Teams wasted countless hours building custom data pipelines and cleaning the same data repeatedly.</li>
+                        <li><strong>Security and Compliance Gaps:</strong> Managing compliance with regulations like GDPR was a significant operational risk with data spread across dozens of systems.</li>
+                    </ul>
+                    <p class="mt-4">The client needed a new paradigm: a Unified Data Asset Platform to serve as the single, trusted "data factory" for the entire enterprise.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-white mt-12">Our Solution: Engineering the Unified Data Asset Platform</h3>
+                    <p class="mt-4">We were selected as the expert partner to architect and deliver this transformative platform. Our solution was a comprehensive, multi-phased engagement built on three powerful concepts: <strong>OneData</strong> (unified data modeling), <strong>OneID</strong> (unified identity), and <strong>OneService</strong> (unified data services).</p>
+                    
+                    <h4 class="text-2xl font-bold text-white mt-8">Phase 1: Building the Foundation (Platform & "OneData")</h4>
+                    <p class="mt-4">This phase focused on deploying the core platform and implementing the "OneData" methodology for standardisation.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside">
+                        <li><strong>Platform Deployment:</strong> We deployed the core intelligent data construction and management engine on the client's public cloud infrastructure.</li>
+                        <li><strong>Data Ingestion:</strong> We designed and built robust data ingestion pipelines to connect to the client's myriad data sources.</li>
+                        <li><strong>Implementing "OneData":</strong> We worked with all business stakeholders to implement a new, unified data standardisation framework, establishing global definitions for all core data elements.</li>
+                        <li><strong>Systematic Data Modeling:</strong> Using these new standards, we systematically designed and developed the new data warehouse models in a structured, top-down, and semi-automated fashion.</li>
+                    </ul>
+
+                    <h4 class="text-2xl font-bold text-white mt-8">Phase 2: Achieving the 360-Degree View ("OneID" & BI)</h4>
+                    <p class="mt-4">With a trusted data foundation, we tackled the fragmented customer view.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside">
+                        <li><strong>Implementing the "OneID" Engine:</strong> We deployed the platform's "OneID" functional module, a massive graph computing and algorithm-based methodology for identity management.</li>
+                        <li><strong>Identity Stitching:</strong> The engine ingested all available customer identifiers and connected them to a single, stable, virtual "OneID" for each unique person.</li>
+                        <li><strong>Creating the "Golden Record":</strong> This process created the "golden record" for every customer, finally providing the single customer view the business needed.</li>
+                        <li><strong>Enabling Business Intelligence:</strong> We deployed a modern BI tool and delivered critical reporting dashboards, giving management a clear, consistent view of business performance.</li>
+                    </ul>
+
+                    <h4 class="text-2xl font-bold text-white mt-8">Phase 3: Activating the Data (Customer Profiling & Marketing)</h4>
+                    <p class="mt-4">The final phase was to activate this new data asset for customer profiling and marketing.</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside">
+                        <li><strong>Consumer Labeling Taxonomy:</strong> We worked with marketing teams to design a detailed "consumer labelling taxonomy" to define customer segments.</li>
+                        <li><strong>Data-Driven Models:</strong> We developed data models to automatically generate these labels for every customer, including standard models like RFM and AIPL.</li>
+                        <li><strong>Audience Segmentation Platform:</strong> We deployed a "OneService" application that allows marketers to instantly create audience groups for precision marketing campaigns without writing any code.</li>
+                    </ul>
+                    <p class="mt-4">Finally, we ensured the entire platform was secured with comprehensive data security to meet strict European data protection regulations.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-white mt-12">The Outcome: A New Data-Driven Core for a Retail Leader</h3>
+                    <p class="mt-4">The Unified Data Asset Platform was successfully launched, becoming the new, foundational data core for the entire conglomerate. The project delivered transformative value:</p>
+                    <ul class="mt-4 space-y-2 list-disc list-inside">
+                        <li><strong>A True Single Source of Truth:</strong> We successfully broke down decades of data silos.</li>
+                        <li><strong>The 360-Degree Customer View, Achieved:</strong> The "OneID" engine successfully unified disparate customer records.</li>
+                        <li><strong>Data-Driven Decision Making:</strong> New BI dashboards transformed management reporting and strategic planning.</li>
+                        <li><strong>Empowered and Precise Marketing:</strong> The new audience segmentation platform revolutionised the marketing department.</li>
+                        <li><strong>A Foundation for Innovation:</strong> The platform provides a foundation for future innovation, radically accelerating the pace of new data applications.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-20">
+                <a href="../case-studies.html" class="text-cyan-400 font-medium hover:text-cyan-300 transition duration-300">
+                    &larr; Back to Case Studies
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 mt-16">
+        <div class="container mx-auto max-w-6xl px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-slate-500">
+                <p>&copy; 2025 AvailLogic. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="../privacy.html" class="hover:text-cyan-400 transition duration-300">Privacy Policy</a>
+                    <a href="../terms.html" class="hover:text-cyan-400 transition duration-300">Service Terms</a>
+                    <a href="../disclaimer.html" class="hover:text-cyan-400 transition duration-300">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram id="G4dSiKf9AfAPkuNNC7Zt" name="Page-1">
+    <mxGraphModel dx="1426" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-1" value="Customer-Facing Applications" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="815" width="589" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-2" value="Customer Intelligence Platform" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="629" y="198" width="801" height="921" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-3" value="Customer Data Sources" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="516" y="20" width="935" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-4" value="CRM &amp; POS Systems (Batch)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="551" y="57" width="257" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-5" value="Web Analytics (Streaming)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="858" y="57" width="248" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-6" value="Mobile App Events (Streaming)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1156" y="45" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-7" value="Real-Time Data Unification &#xa;(Batch &amp;amp; Streaming Pipelines)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="852" y="223" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-8" value="Customer 360 Database / CDP" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="792" y="375" width="215" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-9" value="AI-Driven Segmentation Environments &#xa;(Clustering Algorithms)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="664" y="535" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-10" value="Deep Learning Recommendation Engine" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="547" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-11" value="Instant API Serving Layer &#xa;(High-Speed)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="781" y="687" width="237" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-12" value="Continuous Feedback Loop" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1098" y="1040" width="251" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-13" value="Website &#xa;(Real-Time Recommendations)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="840" width="260" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-14" value="Mobile App &#xa;(Personalised Offers)" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="365" y="852" width="209" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.18;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-4" target="GIQlIXs0QirbnBZxtxNW-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="679" y="198" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-5" target="GIQlIXs0QirbnBZxtxNW-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-17" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=1;entryY=0.18;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-6" target="GIQlIXs0QirbnBZxtxNW-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1286" y="198" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.29;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-7" target="GIQlIXs0QirbnBZxtxNW-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="899" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.16;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-8" target="GIQlIXs0QirbnBZxtxNW-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="794" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-20" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.79;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-8" target="GIQlIXs0QirbnBZxtxNW-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-21" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.23;entryY=0.01;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-9" target="GIQlIXs0QirbnBZxtxNW-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="794" y="662" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=1;entryY=0.15;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-10" target="GIQlIXs0QirbnBZxtxNW-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="662" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.04;exitY=1.01;entryX=1;entryY=0.32;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-11" target="GIQlIXs0QirbnBZxtxNW-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="722" y="790" />
+              <mxPoint x="722" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.79;entryX=1;entryY=0.37;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-11" target="GIQlIXs0QirbnBZxtxNW-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1242" y="790" />
+              <mxPoint x="1242" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-25" value="User Interactions" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.01;entryY=0.01;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-13" target="GIQlIXs0QirbnBZxtxNW-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="967" />
+              <mxPoint x="936" y="1004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-26" value="User Interactions" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.26;entryY=0.01;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-14" target="GIQlIXs0QirbnBZxtxNW-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="967" />
+              <mxPoint x="1082" y="1004" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GIQlIXs0QirbnBZxtxNW-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.69;exitY=0.01;entryX=1;entryY=0.77;rounded=0;" edge="1" parent="1" source="GIQlIXs0QirbnBZxtxNW-12" target="GIQlIXs0QirbnBZxtxNW-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1338" y="1004" />
+              <mxPoint x="1338" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

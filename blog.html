@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>AvailLogic - Resources & Insights</title>
+    <link rel="icon" href="assets/logo_nobg_filled.png" type="image/png">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore AvailLogic's latest articles and insights on AI, data transformation, and industry trends.">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="container mx-auto max-w-6xl px-6 py-6 flex justify-between items-center relative">
+        <!-- Brand Logo -->
+        <a href="index.html" class="z-20 flex items-center">
+            <img src="assets/logo_nobg_filled.png" alt="AvailLogic Logo" class="h-8 mr-3">
+            <h1 class="text-3xl font-bold text-white">
+                Avail<span class="text-cyan-400">Logic</span>
+            </h1>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8" id="desktop-nav">
+            <a href="index.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="services.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Services</a>
+            <a href="case-studies.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Case Studies</a>
+            <a href="about.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">About Us</a>
+            <a href="blog.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300 active">Resources</a>
+        </nav>
+
+        <!-- Contact Button (Desktop) -->
+        <a href="contact.html" class="hidden md:inline-block bg-cyan-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-cyan-600 transition duration-300">
+            Contact Us
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden z-20 text-white p-2 -mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full h-screen bg-slate-900 bg-opacity-95 backdrop-blur-sm hidden flex-col items-center justify-center space-y-8 text-2xl z-10">
+            <a href="index.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="services.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Services</a>
+            <a href="case-studies.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Case Studies</a>
+            <a href="about.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">About Us</a>
+            <a href="blog.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300 active">Resources</a>
+            <a href="contact.html" class="nav-link bg-cyan-500 text-white font-medium py-3 px-8 rounded-lg hover:bg-cyan-600 transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto max-w-6xl px-6">
+
+        <section id="page-blog" class="py-24">
+            <h2 class="text-4xl md:text-5xl font-bold text-white">Resources & Insights</h2>
+            <p class="text-lg text-slate-400 mt-4 max-w-3xl">
+                Explore our latest analysis on AI, data transformation, and industry trends.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Blog Post 1 -->
+                <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
+                    <a href="blogs/beyond-the-hype-your-smes-survival-guide-to-ai-in-2025.html">
+                        <img src="assets/img_blog_beyond_the_hype.jpg" alt="Abstract AI brain illustration" class="w-full h-48 object-cover">
+                        <div class="p-8">
+                            <span class="text-sm text-cyan-400 font-medium">AI Strategy</span>
+                            <h4 class="text-2xl font-semibold text-white mt-2">Beyond the Hype: Your SME’s Survival Guide to AI in 2025</h4>
+                            <p class="text-slate-300 mt-3">
+                                A guide for SMEs to navigate the AI landscape in 2025, focusing on AI agents, open vs. closed-source models, and governance.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
+                    <a href="blogs/cleaning-the-engine-room-why-your-ai-needs-a-curated-data-foundation.html">
+                        <img src="assets/img_blog_clean_the_engine_room.jpg" alt="AI brain connected to an engine" class="w-full h-48 object-cover">
+                        <div class="p-8">
+                            <span class="text-sm text-cyan-400 font-medium">Data Governance</span>
+                            <h4 class="text-2xl font-semibold text-white mt-2">Cleaning the Engine Room: Why Your AI Needs a Curated Data Foundation</h4>
+                            <p class="text-slate-300 mt-3">
+                                This post emphasizes the importance of data curation and governance for successful AI implementation, comparing it to cleaning a ship's engine room.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
+                    <a href="blogs/the-digital-workforce-multiplier-why-ai-agents-are-the-true-game-changer-for-smes.html">
+                        <img src="assets/img_blog_the_digital_workforce_multiplier.jpg" alt="Holographic figures representing a digital workforce" class="w-full h-48 object-cover">
+                        <div class="p-8">
+                            <span class="text-sm text-cyan-400 font-medium">AI Agents</span>
+                            <h4 class="text-2xl font-semibold text-white mt-2">The Digital Workforce Multiplier: Why AI Agents Are the True Game Changer for SMEs</h4>
+                            <p class="text-slate-300 mt-3">
+                                Discover how AI agents can act as a digital workforce multiplier for SMEs, automating tasks and driving growth.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-16">
+        <div class="container mx-auto max-w-6xl px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-slate-500">
+                <p>&copy; 2025 AvailLogic. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-cyan-400 transition duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-cyan-400 transition duration-300">Service Terms</a>
+                    <a href="disclaimer.html" class="hover:text-cyan-400 transition duration-300">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS for Mobile Menu -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

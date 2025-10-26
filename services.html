@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>AvailLogic - Our Services</title>
+    <link rel="icon" href="assets/logo_nobg_filled.png" type="image/png">
+    <!-- SEO Meta Description -->
+    <meta name="description" content="Explore AvailLogic's comprehensive data and AI engineering services, including data infrastructure, pipeline automation, and AI workflow development.">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="container mx-auto max-w-6xl px-6 py-6 flex justify-between items-center relative">
+        <!-- Brand Logo -->
+        <a href="index.html" class="z-20 flex items-center">
+            <img src="assets/logo_nobg_filled.png" alt="AvailLogic Logo" class="h-8 mr-3">
+            <h1 class="text-3xl font-bold text-white">
+                Avail<span class="text-cyan-400">Logic</span>
+            </h1>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8" id="desktop-nav">
+            <a href="index.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="services.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300 active">Services</a>
+            <a href="case-studies.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Case Studies</a>
+            <a href="about.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">About Us</a>
+            <a href="blog.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Resources</a>
+        </nav>
+
+        <!-- Contact Button (Desktop) -->
+        <a href="contact.html" class="hidden md:inline-block bg-cyan-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-cyan-600 transition duration-300">
+            Contact Us
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden z-20 text-white p-2 -mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full h-screen bg-slate-900 bg-opacity-95 backdrop-blur-sm hidden flex-col items-center justify-center space-y-8 text-2xl z-10">
+            <a href="index.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Home</a>
+            <a href="services.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300 active">Services</a>
+            <a href="case-studies.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Case Studies</a>
+            <a href="about.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">About Us</a>
+            <a href="blog.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Resources</a>
+            <a href="contact.html" class="nav-link bg-cyan-500 text-white font-medium py-3 px-8 rounded-lg hover:bg-cyan-600 transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto max-w-6xl px-6">
+
+        <section id="page-services" class="py-24">
+            <h2 class="text-4xl md:text-5xl font-bold text-white">Our Services</h2>
+            <p class="text-lg text-slate-400 mt-4 max-w-3xl">
+                We provide end-to-end engineering services to help you build a robust data foundation, from initial infrastructure design to workflow implementation and optimisation.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Service 1 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-white"><a href="services/predictive-analytics-forecasting.html" class="hover:text-cyan-400">Predictive Analytics & Forecasting</a></h3>
+                    <p class="text-slate-300 mt-3 flex-grow">
+                        We build the data pipelines and machine learning environments your teams need to accurately forecast demand, anticipate failures, and drive proactive decision-making.
+                    </p>
+                    <a href="services/predictive-analytics-forecasting.html" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium mt-4 inline-block">Learn More &rarr;</a>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-white"><a href="services/customer-intelligence-personalisation.html" class="hover:text-cyan-400">Customer Intelligence & Personalisation</a></h3>
+                    <p class="text-slate-300 mt-3 flex-grow">
+                        We engineer unified customer data platforms that empower you to predict behaviour, segment audiences, and deliver real-time personalisation.
+                    </p>
+                    <a href="services/customer-intelligence-personalisation.html" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium mt-4 inline-block">Learn More &rarr;</a>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-white"><a href="services/intelligent-process-automation.html" class="hover:text-cyan-400">Intelligent Process Automation</a></h3>
+                    <p class="text-slate-300 mt-3 flex-grow">
+                        Our services help you design and implement automated workflows that combine AI-based decisioning with RPA to enhance productivity and accuracy.
+                    </p>
+                    <a href="services/intelligent-process-automation.html" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium mt-4 inline-block">Learn More &rarr;</a>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-white"><a href="services/computer-vision-quality-safety.html" class="hover:text-cyan-400">Computer Vision Infrastructure</a></h3>
+                    <p class="text-slate-300 mt-3 flex-grow">
+                        We build the infrastructure to process and analyse images and video feeds, enabling your teams to deploy deep learning models for defect detection and safety monitoring.
+                    </p>
+                    <a href="services/computer-vision-quality-safety.html" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium mt-4 inline-block">Learn More &rarr;</a>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-white"><a href="services/risk-detection-fraud-prevention.html" class="hover:text-cyan-400">Risk & Fraud Detection Platforms</a></h3>
+                    <p class="text-slate-300 mt-3 flex-grow">
+                        We engineer the platforms that allow you to leverage advanced machine learning for real-time transaction analysis, reducing loss and ensuring compliance.
+                    </p>
+                    <a href="services/risk-detection-fraud-prevention.html" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium mt-4 inline-block">Learn More &rarr;</a>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-white"><a href="services/data-infrastructure-governance.html" class="hover:text-cyan-400">Data Infrastructure & Governance</a></h3>
+                    <p class="text-slate-300 mt-3 flex-grow">
+                        We design and build modern data platforms that unify your data landscape while ensuring quality, accessibility, security, and compliance.
+                    </p>
+                    <a href="services/data-infrastructure-governance.html" class="text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium mt-4 inline-block">Learn More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-16">
+        <div class="container mx-auto max-w-6xl px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-slate-500">
+                <p>&copy; 2025 AvailLogic. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-cyan-400 transition duration-300">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-cyan-400 transition duration-300">Service Terms</a>
+                    <a href="disclaimer.html" class="hover:text-cyan-400 transition duration-300">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS for Mobile Menu -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+        /* Use Inter font as the default */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Dark slate background */
+            color: #e2e8f0; /* Light slate text */
+        }
+        /* Custom gradient for the hero section */
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+        }
+        /* Smooth scrolling (for homepage anchors if any) */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Active nav link style */
+        .nav-link.active {
+            color: #22d3ee; /* cyan-400 */
+        }
+        
+        /* Animation for page fade-in */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Animation for logo ticker */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .logo-ticker-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            width: calc(200px * 14); /* 2x number of logos */
+        }
+        .logo-ticker-slide {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 40px;
+        }
+    
