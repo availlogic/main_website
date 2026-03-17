@@ -1,246 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated Title -->
-    <title>AvailLogic - Data & AI Workflow Development Services</title>
-    <link rel="icon" href="assets/logo_nobg_filled.png" type="image/png">
-    <!-- SEO Meta Description -->
-    <meta name="description" content="AvailLogic provides expert data and AI engineering services, specialising in building the data workflows and infrastructure that empower your internal teams.">
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "AvailLogic",
-      "url": "https://availlogic.com",
-      "logo": "https://availlogic.com/assets/logo_nobg_filled.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "",
-        "contactType": "customer service"
-      }
-    }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AvailLogic - Specialized AI & Data Workflow Development Services. Senior-level engineering for predictive analytics, customer intelligence, and process automation." />
+  <meta name="keywords" content="AI development, data engineering, machine learning, predictive analytics, customer intelligence, process automation, freelance developer, fiverr, freelancer" />
+  <meta name="author" content="AvailLogic" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AvailLogic - AI & Data Workflow Development" />
+  <meta property="og:description" content="Specialized AI & Data Workflow Development. Senior-level engineering for when off-the-shelf tools fail." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://availlogic.com" />
+  <meta property="og:site_name" content="AvailLogic" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AvailLogic - AI & Data Workflow Development" />
+  <meta name="twitter:description" content="Specialized AI & Data Workflow Development. Senior-level engineering for when off-the-shelf tools fail." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2310B981'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <title>AvailLogic - AI & Data Workflow Development | Freelance Developer</title>
 </head>
-<body class="antialiased overflow-x-hidden">
 
-    <!-- Header -->
-    <header class="container mx-auto max-w-6xl px-6 py-6 flex justify-between items-center relative">
-        <!-- Brand Logo -->
-        <a href="index.html" class="z-20 flex items-center">
-            <img src="assets/logo_nobg_filled.png" alt="AvailLogic Logo" class="h-8 mr-3">
-            <h1 class="text-3xl font-bold text-white">
-                Avail<span class="text-cyan-400">Logic</span>
-            </h1>
-        </a>
-        
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center space-x-8" id="desktop-nav">
-            <a href="index.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300 active">Home</a>
-            <a href="services.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Services</a>
-            <a href="case-studies.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Case Studies</a>
-            <a href="about.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">About Us</a>
-            <a href="blog.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Resources</a>
-        </nav>
-
-        <!-- Contact Button (Desktop) -->
-        <a href="contact.html" class="hidden md:inline-block bg-cyan-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-cyan-600 transition duration-300">
-            Contact Us
-        </a>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden z-20 text-white p-2 -mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full h-screen bg-slate-900 bg-opacity-95 backdrop-blur-sm hidden flex-col items-center justify-center space-y-8 text-2xl z-10">
-            <a href="index.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300 active">Home</a>
-            <a href="services.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Services</a>
-            <a href="case-studies.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Case Studies</a>
-            <a href="about.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">About Us</a>
-            <a href="blog.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Resources</a>
-            <a href="contact.html" class="nav-link bg-cyan-500 text-white font-medium py-3 px-8 rounded-lg hover:bg-cyan-600 transition duration-300">
-                Contact Us
-            </a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto max-w-6xl px-6">
-
-        <!-- Hero Section -->
-        <section class="text-center py-20 md:py-32 hero-gradient rounded-3xl mt-6">
-            <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight max-w-3xl mx-auto">
-                Engineering the Foundation for Your Data & AI Strategy
-            </h2>
-            <p class="text-lg md:text-xl text-slate-300 mt-6 max-w-2xl mx-auto">
-                We provide expert services to design and build the data and AI infrastructure that empowers your teams. We specialise in engineering the foundational data workflows and AI pipelines that enable your data scientists and analysts to innovate and grow.
-            </p>
-            <!-- Core Services List -->
-            <p class="text-base md:text-lg text-cyan-400 mt-8 font-medium tracking-wide">
-                Data & AI Workflow Development · Data Pipeline Engineering · Cloud Infrastructure & Automation
-            </p>
-            <a href="https://calendly.com/availlogic/book" target="_blank" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-lg text-lg mt-10 inline-block hover:bg-cyan-600 transition duration-300 transform hover:scale-105 animate-pulse">
-                Schedule a Consultation
-            </a>
-        </section>
-
-
-
-        <!-- Services Summary Section (on Homepage) -->
-        <section id="home-services" class="py-24">
-            <h3 class="text-3xl md:text-4xl font-bold text-center text-white">
-                Our Services
-            </h3>
-            <p class="text-lg text-slate-400 text-center mt-4 max-w-2xl mx-auto">
-                We provide the engineering expertise to build robust data workflows and prepare your organisation for advanced analytics and AI.
-            </p>
-            
-            <div class="grid md:grid-cols-3 gap-8 mt-16">
-                <!-- Service 1: Predictive Analytics -->
-                <a href="services/predictive-analytics-forecasting.html" class="block bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <h4 class="text-2xl font-semibold text-white mt-2">Predictive Analytics & Forecasting</h4>
-                    <p class="text-slate-300 mt-3">
-                        We build the data pipelines and machine learning environments your teams need to accurately forecast demand, anticipate failures, and drive proactive decision-making.
-                    </p>
-                </a>
-                <!-- Service 2: Customer Intelligence -->
-                <a href="services/customer-intelligence-personalisation.html" class="block bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <h4 class="text-2xl font-semibold text-white mt-2">Customer Intelligence & Personalisation</h4>
-                    <p class="text-slate-300 mt-3">
-                        We engineer unified customer data platforms that empower you to predict behaviour, segment audiences, and deliver real-time personalisation.
-                    </p>
-                </a>
-                <!-- Service 3: Process Automation -->
-                <a href="services/intelligent-process-automation.html" class="block bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <h4 class="text-2xl font-semibold text-white mt-2">Intelligent Process Automation</h4>
-                    <p class="text-slate-300 mt-3">
-                        Our services help you design and implement automated workflows that combine AI-based decisioning with RPA to enhance productivity and accuracy.
-                    </p>
-                </a>
-            </div>
-            <div class="text-center mt-12">
-                <a href="services.html" class="text-lg text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">
-                    Explore All Services &rarr;
-                </a>
-            </div>
-        </section>
-
-        <!-- Why Choose Us Section (New) -->
-        <section id="why-us" class="py-24 bg-slate-800 rounded-3xl">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Image Placeholder -->
-                <div class="px-8">
-                    <img src="assets/img_partner.jpg" alt="Your Engineering Partner for Data & AI" class="rounded-2xl shadow-xl w-full">
-                </div>
-                <!-- Text Content -->
-                <div class="px-8">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white">Your Engineering Partner for Data & AI</h3>
-                    <p class="text-lg text-slate-300 mt-6">
-                        We are your dedicated engineering partner, translating complex technical requirements into tangible business value. Our expertise is building the foundational systems that make your data team successful.
-                    </p>
-                    <ul class="mt-6 space-y-4 text-slate-300">
-                        <li class="flex items-start">
-                            <span class="text-cyan-400 mr-3 mt-1 flex-shrink-0">&#10003;</span>
-                            <div>
-                                <strong>Business-Focused Outcomes:</strong> We architect and implement data infrastructure that reduces costs, drives revenue, and improves efficiency.
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-cyan-400 mr-3 mt-1 flex-shrink-0">&#10003;</span>
-                            <div>
-                                <strong>Deep Engineering Expertise:</strong> Our projects are led by seasoned data engineers and architects with 15+ years of experience in data warehousing, pipeline automation, and AI infrastructure.
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-cyan-400 mr-3 mt-1 flex-shrink-0">&#10003;</span>
-                            <div>
-                                <strong>Pragmatic & Agile:</strong> We provide clear roadmaps and agile implementation, ensuring you see value quickly without getting lost in jargon.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Case Studies Summary Section (on Homepage) -->
-        <section id="home-case-studies" class="py-24">
-            <h3 class="text-3xl md:text-4xl font-bold text-center text-white">
-                Our Proven Impact
-            </h3>
-            <p class="text-lg text-slate-400 text-center mt-4 max-w-2xl mx-auto">
-                See how we've helped businesses like yours succeed with data.
-            </p>
-            <div class="grid md:grid-cols-2 gap-8 mt-16">
-                <!-- ECI Case Study -->
-                <a href="case-studies/retail-ecommerce.html" class="block bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <div class="p-8">
-                        <h4 class="text-2xl font-semibold text-white">Powering a Retail Giant</h4>
-                        <p class="text-slate-300 mt-3">
-                            Enabled a 360-degree customer view and unified data assets for a major European retail conglomerate.
-                        </p>
-                    </div>
-                </a>
-                <!-- Santander Case Study -->
-                <a href="case-studies/financial-services.html" class="block bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <div class="p-8">
-                        <h4 class="text-2xl font-semibold text-white">Real-Time AI for a Financial Leader</h4>
-                        <p class="text-slate-300 mt-3">
-                            Augmented a legacy marketing platform with a real-time AI "brain" to enable intelligent, event-driven customer engagement.
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="text-center mt-12">
-                <a href="case-studies.html" class="text-lg text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">
-                    View All Case Studies &rarr;
-                </a>
-            </div>
-        </section>
-        
-        <!-- CTA Section (on Homepage) -->
-        <section id="home-contact" class="py-24 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold text-white">
-                Let's Engineer Your Data-Driven Future
-            </h3>
-            <p class="text-lg text-slate-400 mt-4 max-w-2xl mx-auto">
-                Ready to start your project or just want to learn more? We'd love to hear from you.
-            </p>
-            <a href="contact.html" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-lg text-lg mt-10 inline-block hover:bg-cyan-600 transition duration-300">
-                Get in Touch
-            </a>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-800 mt-16">
-        <div class="container mx-auto max-w-6xl px-6 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center text-slate-500">
-                <p>&copy; 2025 AvailLogic. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="privacy.html" class="hover:text-cyan-400 transition duration-300">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-cyan-400 transition duration-300">Service Terms</a>
-                    <a href="disclaimer.html" class="hover:text-cyan-400 transition duration-300">Disclaimer</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JS for Mobile Menu -->
-    <script src="js/main.js"></script>
-
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>
