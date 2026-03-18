@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Direct Access',
-    description: 'No middlemen. You work directly with a senior data engineer with 15+ years of experience.',
+    description: 'No middlemen. You work directly with a senior AI engineer with 15+ years of experience.',
     highlight: 'Direct'
   },
   {
@@ -17,7 +17,7 @@ const benefits = [
   {
     icon: Shield,
     title: 'Business-Focused',
-    description: 'I architect data infrastructure that reduces costs, drives revenue, and improves efficiency.',
+    description: 'I architect AI systems that reduce costs, drive revenue, and improve operational efficiency.',
     highlight: 'ROI'
   }
 ];
@@ -66,10 +66,10 @@ export default function WhyChooseUs() {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6">
             Your Engineering Partner for{' '}
-            <span className="gradient-text">Data & AI</span>
+            <span className="gradient-text">AI & Data</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            I translate complex technical requirements into tangible business value. My expertise is building the foundational systems that make your data team successful.
+            I translate complex AI requirements into production-ready systems. My expertise is building the intelligent automation that drives operational efficiency.
           </p>
         </motion.div>
 

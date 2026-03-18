@@ -1,61 +1,43 @@
----
-AIGC:
-    ContentProducer: Minimax Agent AI
-    ContentPropagator: Minimax Agent AI
-    Label: AIGC
-    ProduceID: "00000000000000000000000000000000"
-    PropagateID: "00000000000000000000000000000000"
-    ReservedCode1: 3046022100ead6f04530974f7e7847bce0b33c9ef550a7e697983858bbeed7787dde1da9ab022100edf35f5b32325a3c07562a409b76a4cf725c8e7fe08b3f9ae65d81e2280b0fb2
-    ReservedCode2: 3045022100f82ddedd5bcdae46a85c0928b9aa76427d766dba7d8fde0f3d9971a476d7d91d02206933234124009a4344d9efc89dfacf8ccfb1f3f81a6dda966bbb2b97f80fe165
----
+# AvailLogic - AI & Data Workflow Development
 
-# React + TypeScript + Vite
+AvailLogic specializes in AI and data workflow development services, providing senior-level engineering for predictive analytics, customer intelligence, and process automation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
 
-Currently, two official plugins are available:
+This website serves as the professional portfolio and service landing page for AvailLogic, showcasing core services and case studies for specialized AI and data solutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Development
 
-## Expanding the ESLint configuration
+This project is built with React, TypeScript, and Vite.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (Latest LTS recommended)
+- `pnpm` (recommended package manager)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Build
+
+To compile the application for production:
+
+```bash
+pnpm build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The production assets will be generated in the `dist/` directory.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Preview
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+To preview the production build locally:
+
+```bash
+pnpm preview
 ```
+
+### Deployment
+
+The project is configured for deployment on **Netlify**. 
+
+- **Build Command**: `pnpm install --prefer-offline && rm -rf node_modules/.vite-temp && tsc -b && BUILD_MODE=prod vite build`
+- **Publish Directory**: `dist`
+
+Deployment settings are maintained in the `netlify.toml` file.

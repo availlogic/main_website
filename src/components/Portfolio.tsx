@@ -27,7 +27,7 @@ const caseStudies = [
       { icon: Clock, value: '<100ms', label: 'Response Time' },
       { icon: Building2, value: '2.5M+', label: 'Customers Covered' }
     ],
-    tags: ['AI', 'Machine Learning', 'Kafka', 'Python', 'AWS'],
+    tags: ['Machine Learning', 'Kafka', 'Python', 'AWS'],
     color: 'secondary'
   }
 ];

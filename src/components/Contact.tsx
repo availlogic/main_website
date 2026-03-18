@@ -42,7 +42,7 @@ export default function Contact() {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6">
             Let's Engineer Your{' '}
-            <span className="gradient-text">Data-Driven Future</span>
+            <span className="gradient-text">AI-Driven Future</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Ready to start your project or just want to learn more? I'd love to hear from you.

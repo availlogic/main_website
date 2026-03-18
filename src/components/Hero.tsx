@@ -38,7 +38,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight mb-6"
             >
-              Turn Complex Data into{' '}
+              Turn Complex AI into{' '}
               <span className="gradient-text">Business Clarity</span>
             </motion.h1>
 
@@ -49,7 +49,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"
             >
-              Specialized AI & Data Workflow Development. Senior-level engineering for when off-the-shelf tools fail. I build the foundational systems that make your data team successful.
+              Specialized AI & Data Engineering. Senior-level development for when off-the-shelf solutions fall short. I build the AI systems that drive your business forward.
             </motion.p>
 
             {/* CTA Buttons */}
