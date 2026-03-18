@@ -2,15 +2,16 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const footerLinks = {
   services: [
-    { name: 'Predictive Analytics', href: '#services' },
-    { name: 'Customer Intelligence', href: '#services' },
-    { name: 'Process Automation', href: '#services' },
-    { name: 'Data Engineering', href: '#services' }
+    { name: 'AI Chatbots & Conversational Interfaces', href: '/services/ai-chatbots-conversational-interfaces' },
+    { name: 'AI Business Automation & Workflow Intelligence', href: '/services/ai-business-automation-workflow-intelligence' },
+    { name: 'RAG Knowledge Base', href: '/services/rag-knowledge-base' },
+    { name: 'AI Voice Assistants / Voice Agents', href: '/services/ai-voice-assistants-voice-agents' },
+    { name: 'AI Integrations & Multi-Agent Systems', href: '/services/ai-integrations-multi-agent-systems' }
   ],
   company: [
-    { name: 'About', href: '#about' },
-    { name: 'Work', href: '#work' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'About', href: '/#about' },
+    { name: 'Case Studies', href: '/case-studies' },
+    { name: 'Contact', href: '/#contact' }
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy' },

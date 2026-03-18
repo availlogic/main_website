@@ -75,12 +75,12 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {/* Home Link */}
-            <Link
-              to="/"
+            <a
+              href="/#hero"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Home
-            </Link>
+            </a>
 
             {/* Services Dropdown */}
             <div className="relative services-dropdown">
@@ -245,13 +245,13 @@ export default function Header() {
               <div className="py-6 space-y-4">
                 {/* Home Link */}
                 <div className="px-4">
-                  <Link
-                    to="/"
+                  <a
+                    href="/#hero"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                   >
                     Home
-                  </Link>
+                  </a>
                 </div>
 
                 {/* Services Section */}
