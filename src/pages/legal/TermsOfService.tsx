@@ -19,7 +19,7 @@ export default function TermsOfService() {
               Last Updated: 24 October 2025
             </p>
             <p className="text-muted-foreground mt-2">
-              <strong>Company:</strong> AvailLogic Ltd., Ireland
+              <strong>Company:</strong> AvailLogic, Ireland
             </p>
           </div>
 
@@ -28,21 +28,21 @@ export default function TermsOfService() {
             <section className="mb-10">
               <h2 className="text-2xl font-bold font-heading mb-4 text-primary">1. Overview</h2>
               <p className="text-muted-foreground leading-relaxed">
-                These Terms set out the general conditions under which AvailLogic Ltd. ("we", "our", "us") provides Data & AI professional services to clients ("you"). By engaging AvailLogic Ltd., you agree to these Terms governing our consulting, integration, and delivery work.
+                These Terms set out the general conditions under which AvailLogic ("we", "our", "us") provides AI professional services to clients ("you"). By engaging AvailLogic, you agree to these Terms governing our consulting, integration, and delivery work.
               </p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-bold font-heading mb-4 text-primary">2. Nature of Services</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                AvailLogic Ltd. provides <strong>professional Data & AI consultancy and implementation services</strong>, including:
+                AvailLogic provides <strong>professional AI consultancy, development, and deployment services</strong>, including:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
-                <li>Data pipeline and workflow engineering</li>
-                <li>AI model integration and deployment support</li>
-                <li>Cloud migration and system integration</li>
-                <li>Data architecture and infrastructure design</li>
-                <li>Technical advisory and training</li>
+                <li>AI Chatbots & Conversational Interfaces</li>
+                <li>AI Business Automation & Workflow Intelligence</li>
+                <li>RAG Knowledge Base</li>
+                <li>AI Voice Assistants / Voice Agents</li>
+                <li>AI Integrations & Multi-Agent Systems</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 Services are delivered <strong>as professional engagements</strong>, not as off-the-shelf software or licensed products.
@@ -62,7 +62,7 @@ export default function TermsOfService() {
                 Unless otherwise agreed:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
-                <li>Pre-existing tools, methods, or frameworks remain the property of AvailLogic Ltd.</li>
+                <li>Pre-existing tools, methods, or frameworks remain the property of AvailLogic.</li>
                 <li>Deliverables created specifically for the client become the client's property once payment is complete.</li>
               </ul>
             </section>
@@ -84,7 +84,7 @@ export default function TermsOfService() {
             <section className="mb-10">
               <h2 className="text-2xl font-bold font-heading mb-4 text-primary">7. Limitation of Liability</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                AvailLogic Ltd. performs all services with reasonable skill and care, but shall not be liable for:
+                AvailLogic performs all services with reasonable skill and care, but shall not be liable for:
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 pl-4">
                 <li>Indirect, consequential, or economic loss;</li>
@@ -115,7 +115,7 @@ export default function TermsOfService() {
                 <strong>Email:</strong> <a href="mailto:info@availlogic.com" className="text-primary hover:underline">info@availlogic.com</a>
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                <strong>Company:</strong> AvailLogic Ltd., Ireland
+                <strong>Company:</strong> AvailLogic, Ireland
               </p>
             </section>
           </div>

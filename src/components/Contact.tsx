@@ -14,7 +14,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission - could integrate with email service
-    const mailtoLink = `mailto:hello@availlogic.com?subject=Project Inquiry from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
+    const mailtoLink = `mailto:info@availlogic.com?subject=Project Inquiry from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
     window.location.href = mailtoLink;
   };
 
@@ -74,8 +74,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">Email</div>
-                    <a href="mailto:hello@availlogic.com" className="font-medium hover:text-primary transition-colors">
-                      hello@availlogic.com
+                    <a href="mailto:info@availlogic.com" className="font-medium hover:text-primary transition-colors">
+                      info@availlogic.com
                     </a>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                 <div className="text-sm text-muted-foreground mb-4">Connect with me</div>
                 <div className="flex gap-4">
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/company/availlogic"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-lg bg-surface-light/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
@@ -104,7 +104,7 @@ export default function Contact() {
                     <Linkedin className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/availlogic"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-lg bg-surface-light/50 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
@@ -209,10 +209,11 @@ export default function Contact() {
                       className="w-full px-4 py-3 rounded-lg bg-surface-light/50 border border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                     >
                       <option value="">Select type</option>
-                      <option value="predictive-analytics">Predictive Analytics</option>
-                      <option value="customer-intelligence">Customer Intelligence</option>
-                      <option value="process-automation">Process Automation</option>
-                      <option value="data-engineering">Data Engineering</option>
+                      <option value="ai-chatbots">AI Chatbots & Conversational Interfaces</option>
+                      <option value="ai-automation">AI Business Automation</option>
+                      <option value="rag-knowledge-base">RAG Knowledge Base</option>
+                      <option value="ai-voice-agents">AI Voice Assistants</option>
+                      <option value="ai-integrations">AI Integrations & Multi-Agent Systems</option>
                       <option value="consulting">Consulting</option>
                       <option value="other">Other</option>
                     </select>

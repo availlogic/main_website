@@ -49,7 +49,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"
             >
-              Specialized AI & Data Engineering. Senior-level development for when off-the-shelf solutions fall short. I build the AI systems that drive your business forward.
+              Specialized AI Development & Intelligent Automation. Senior-level engineering for when off-the-shelf solutions fall short. I build the AI systems that drive your business forward.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -60,7 +60,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="#work"
+                href="/case-studies"
                 className="btn-primary inline-flex items-center justify-center gap-2"
               >
                 View Case Studies
@@ -116,28 +116,28 @@ export default function Hero() {
                     <div className="w-3 h-3 rounded-full bg-yellow-500" />
                     <div className="w-3 h-3 rounded-full bg-green-500" />
                   </div>
-                  <div className="text-xs font-mono text-muted-foreground">data_pipeline.py</div>
+                  <div className="text-xs font-mono text-muted-foreground">ai_agent.py</div>
                 </div>
 
                 {/* Code Content */}
                 <div className="font-mono text-sm space-y-2">
-                  <div className="text-secondary">import</div>
+                  <div className="text-secondary">from</div>
                   <div>
-                    <span className="text-secondary">pandas</span> <span className="text-muted-foreground">as</span> pd
+                    <span className="text-secondary">langchain</span><span className="text-muted-foreground">.</span>chat_models <span className="text-secondary">import</span> ChatOpenAI
                   </div>
                   <div>
-                    <span className="text-secondary">from</span> sklearn<span className="text-secondary">.</span>preprocessing <span className="text-secondary">import</span> StandardScaler
+                    <span className="text-secondary">from</span> langchain<span className="text-secondary">.</span>agents <span className="text-secondary">import</span> create_react_agent
                   </div>
                   <div className="h-4" />
-                  <div className="text-muted-foreground"># Load and transform data</div>
+                  <div className="text-muted-foreground"># Initialize AI agent</div>
                   <div>
-                    <span className="text-accent">df</span> = pd.<span className="text-primary">read_csv</span>(<span className="text-accent">'data.csv'</span>)
+                    <span className="text-accent">llm</span> = ChatOpenAI(<span className="text-accent">model</span>=<span className="text-accent">'gpt-4o'</span>)
                   </div>
                   <div>
-                    scaler = StandardScaler()
+                    agent = create_react_agent(<span className="text-accent">llm</span>, tools)
                   </div>
                   <div>
-                    features = scaler.<span className="text-primary">fit_transform</span>(df)
+                    result = agent.<span className="text-primary">invoke</span>(query)
                   </div>
                 </div>
               </div>
@@ -153,8 +153,8 @@ export default function Hero() {
                     <Zap className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <div className="text-sm font-medium">Pipeline Active</div>
-                    <div className="text-xs text-muted-foreground">Real-time processing</div>
+                    <div className="text-sm font-medium">Agent Active</div>
+                    <div className="text-xs text-muted-foreground">Reasoning & acting</div>
                   </div>
                 </div>
               </motion.div>

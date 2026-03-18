@@ -32,9 +32,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-xl font-bold text-white font-heading">A</span>
-              </div>
+              <img src="/logo_nobg_filled.png" alt="AvailLogic logo" className="w-10 h-10 rounded-lg object-contain" />
               <span className="text-xl font-bold font-heading">
                 Avail<span className="text-primary">Logic</span>
               </span>
@@ -44,7 +42,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/availlogic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
@@ -52,7 +50,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/availlogic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-all"
@@ -120,7 +118,7 @@ export default function Footer() {
             © {new Date().getFullYear()} AvailLogic. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Built with passion for data & AI
+            Built with passion for AI
           </p>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
               Last Updated: 24 October 2025
             </p>
             <p className="text-muted-foreground mt-2">
-              <strong>Company:</strong> AvailLogic Ltd. ("we", "our", or "us")
+              <strong>Company:</strong> AvailLogic ("we", "our", or "us")
             </p>
             <p className="text-sm text-muted-foreground mt-1">
               <strong>Registered in:</strong> Ireland
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
             <section className="mb-10">
               <h2 className="text-2xl font-bold font-heading mb-4 text-primary">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
-                AvailLogic Ltd. respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard information when you visit our website, contact us, or engage our Data & AI professional services.
+                AvailLogic respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard information when you visit our website, contact us, or engage our AI professional services.
               </p>
             </section>
 
@@ -111,7 +111,7 @@ export default function PrivacyPolicy() {
             <section className="mb-10">
               <h2 className="text-2xl font-bold font-heading mb-4 text-primary">8. Third-Party Links</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Our site may link to external websites. AvailLogic Ltd. is not responsible for their content or privacy practices.
+                Our site may link to external websites. AvailLogic is not responsible for their content or privacy practices.
               </p>
             </section>
 
@@ -121,7 +121,7 @@ export default function PrivacyPolicy() {
                 <strong>Email:</strong> <a href="mailto:info@availlogic.com" className="text-primary hover:underline">info@availlogic.com</a>
               </p>
               <p className="text-muted-foreground leading-relaxed mt-2">
-                <strong>Company:</strong> AvailLogic Ltd., Ireland
+                <strong>Company:</strong> AvailLogic, Ireland
               </p>
             </section>
           </div>
