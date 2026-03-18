@@ -1,246 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated Title -->
-    <title>AvailLogic - Data & AI Workflow Development Services</title>
-    <link rel="icon" href="assets/logo_nobg_filled.png" type="image/png">
-    <!-- SEO Meta Description -->
-    <meta name="description" content="AvailLogic provides expert data and AI engineering services, specialising in building the data workflows and infrastructure that empower your internal teams.">
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "AvailLogic",
-      "url": "https://availlogic.com",
-      "logo": "https://availlogic.com/assets/logo_nobg_filled.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "",
-        "contactType": "customer service"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta -->
+  <meta name="description" content="AvailLogic — AI consultancy, development & deployment based in Ireland. We build AI chatbots, voice agents, RAG knowledge bases, business automation workflows, and multi-agent systems. Senior-level engineering for when off-the-shelf tools fail." />
+  <meta name="keywords" content="AI chatbot development, AI voice agent, RAG knowledge base, AI business automation, multi-agent systems, AI consulting Ireland, LLM integration, conversational AI, workflow intelligence, AI deployment services" />
+  <meta name="author" content="AvailLogic" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- AEO / GEO / LLMO — AI-readable site summary for LLM crawlers -->
+  <meta name="ai:summary" content="AvailLogic is an Ireland-based AI consultancy offering five core services: (1) AI Chatbots & Conversational Interfaces, (2) AI Business Automation & Workflow Intelligence, (3) RAG Knowledge Bases, (4) AI Voice Assistants / Voice Agents, and (5) AI Integrations & Multi-Agent Systems. The company provides senior-level, end-to-end AI development — from strategy and architecture through to deployment and support. AvailLogic specialises in building custom AI solutions for businesses that need more than off-the-shelf tools." />
+  <meta name="ai:services" content="AI Chatbots, Conversational Interfaces, AI Business Automation, Workflow Intelligence, RAG Knowledge Base, AI Voice Assistants, Voice Agents, AI Integrations, Multi-Agent Systems, LLM Integration, AI Consulting" />
+  <meta name="ai:location" content="Ireland (Remote — Available Globally)" />
+  <meta name="ai:contact" content="info@availlogic.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AvailLogic — AI Development & Intelligent Automation" />
+  <meta property="og:description" content="Custom AI chatbots, voice agents, RAG knowledge bases, business automation, and multi-agent systems. Senior-level AI engineering based in Ireland." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://availlogic.com" />
+  <meta property="og:site_name" content="AvailLogic" />
+  <meta property="og:locale" content="en_IE" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AvailLogic — AI Development & Intelligent Automation" />
+  <meta name="twitter:description" content="Custom AI chatbots, voice agents, RAG knowledge bases, business automation, and multi-agent systems. Senior-level AI engineering." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/logo_nobg_filled.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://availlogic.com" />
+
+  <title>AvailLogic — AI Chatbots, Voice Agents, RAG & Automation | Ireland</title>
+
+  <!-- JSON-LD Structured Data for SEO + AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://availlogic.com/#organization",
+        "name": "AvailLogic",
+        "url": "https://availlogic.com",
+        "email": "info@availlogic.com",
+        "description": "AvailLogic is an Ireland-based AI consultancy specialising in AI chatbot development, voice agents, RAG knowledge bases, business automation, and multi-agent system integration.",
+        "areaServed": "Worldwide",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IE"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/availlogic",
+          "https://github.com/availlogic"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "AI Chatbots",
+          "Conversational AI",
+          "Voice Agents",
+          "Retrieval-Augmented Generation",
+          "RAG Systems",
+          "Business Process Automation",
+          "Multi-Agent Systems",
+          "Large Language Models",
+          "LLM Integration",
+          "Natural Language Processing"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "AI Development Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Chatbots & Conversational Interfaces",
+                "description": "Custom AI-powered chatbots with natural language understanding, multi-channel deployment, and seamless business system integration."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Business Automation & Workflow Intelligence",
+                "description": "Intelligent workflow automation using AI agents to streamline operations, reduce manual effort, and improve decision-making."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "RAG Knowledge Base",
+                "description": "Retrieval-Augmented Generation systems that connect LLMs to proprietary data for accurate, grounded, and context-aware answers."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Voice Assistants / Voice Agents",
+                "description": "Production-ready voice agents with real-time speech recognition, natural language understanding, and telephony integration."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Integrations & Multi-Agent Systems",
+                "description": "Orchestration of multiple AI agents working together across business systems for complex, autonomous task execution."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://availlogic.com/#website",
+        "name": "AvailLogic",
+        "url": "https://availlogic.com",
+        "publisher": { "@id": "https://availlogic.com/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://availlogic.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What AI services does AvailLogic offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AvailLogic offers five core AI services: AI Chatbots & Conversational Interfaces, AI Business Automation & Workflow Intelligence, RAG Knowledge Bases, AI Voice Assistants / Voice Agents, and AI Integrations & Multi-Agent Systems."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is AvailLogic based?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AvailLogic is based in Ireland and serves clients globally through remote engagements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact AvailLogic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can reach AvailLogic at info@availlogic.com or book a free 30-minute consultation via the website."
+            }
+          }
+        ]
       }
-    }
-    </script>
+    ]
+  }
+  </script>
 </head>
-<body class="antialiased overflow-x-hidden">
 
-    <!-- Header -->
-    <header class="container mx-auto max-w-6xl px-6 py-6 flex justify-between items-center relative">
-        <!-- Brand Logo -->
-        <a href="index.html" class="z-20 flex items-center">
-            <img src="assets/logo_nobg_filled.png" alt="AvailLogic Logo" class="h-8 mr-3">
-            <h1 class="text-3xl font-bold text-white">
-                Avail<span class="text-cyan-400">Logic</span>
-            </h1>
-        </a>
-        
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center space-x-8" id="desktop-nav">
-            <a href="index.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300 active">Home</a>
-            <a href="services.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Services</a>
-            <a href="case-studies.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Case Studies</a>
-            <a href="about.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">About Us</a>
-            <a href="blog.html" class="nav-link text-slate-300 hover:text-cyan-400 transition duration-300">Resources</a>
-        </nav>
-
-        <!-- Contact Button (Desktop) -->
-        <a href="contact.html" class="hidden md:inline-block bg-cyan-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-cyan-600 transition duration-300">
-            Contact Us
-        </a>
-
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-button" class="md:hidden z-20 text-white p-2 -mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-        </button>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden absolute top-0 left-0 w-full h-screen bg-slate-900 bg-opacity-95 backdrop-blur-sm hidden flex-col items-center justify-center space-y-8 text-2xl z-10">
-            <a href="index.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300 active">Home</a>
-            <a href="services.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Services</a>
-            <a href="case-studies.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Case Studies</a>
-            <a href="about.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">About Us</a>
-            <a href="blog.html" class="nav-link text-slate-200 hover:text-cyan-400 transition duration-300">Resources</a>
-            <a href="contact.html" class="nav-link bg-cyan-500 text-white font-medium py-3 px-8 rounded-lg hover:bg-cyan-600 transition duration-300">
-                Contact Us
-            </a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container mx-auto max-w-6xl px-6">
-
-        <!-- Hero Section -->
-        <section class="text-center py-20 md:py-32 hero-gradient rounded-3xl mt-6">
-            <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight max-w-3xl mx-auto">
-                Engineering the Foundation for Your Data & AI Strategy
-            </h2>
-            <p class="text-lg md:text-xl text-slate-300 mt-6 max-w-2xl mx-auto">
-                We provide expert services to design and build the data and AI infrastructure that empowers your teams. We specialise in engineering the foundational data workflows and AI pipelines that enable your data scientists and analysts to innovate and grow.
-            </p>
-            <!-- Core Services List -->
-            <p class="text-base md:text-lg text-cyan-400 mt-8 font-medium tracking-wide">
-                Data & AI Workflow Development · Data Pipeline Engineering · Cloud Infrastructure & Automation
-            </p>
-            <a href="https://calendly.com/availlogic/book" target="_blank" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-lg text-lg mt-10 inline-block hover:bg-cyan-600 transition duration-300 transform hover:scale-105 animate-pulse">
-                Schedule a Consultation
-            </a>
-        </section>
-
-
-
-        <!-- Services Summary Section (on Homepage) -->
-        <section id="home-services" class="py-24">
-            <h3 class="text-3xl md:text-4xl font-bold text-center text-white">
-                Our Services
-            </h3>
-            <p class="text-lg text-slate-400 text-center mt-4 max-w-2xl mx-auto">
-                We provide the engineering expertise to build robust data workflows and prepare your organisation for advanced analytics and AI.
-            </p>
-            
-            <div class="grid md:grid-cols-3 gap-8 mt-16">
-                <!-- Service 1: Predictive Analytics -->
-                <a href="services/predictive-analytics-forecasting.html" class="block bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <h4 class="text-2xl font-semibold text-white mt-2">Predictive Analytics & Forecasting</h4>
-                    <p class="text-slate-300 mt-3">
-                        We build the data pipelines and machine learning environments your teams need to accurately forecast demand, anticipate failures, and drive proactive decision-making.
-                    </p>
-                </a>
-                <!-- Service 2: Customer Intelligence -->
-                <a href="services/customer-intelligence-personalisation.html" class="block bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <h4 class="text-2xl font-semibold text-white mt-2">Customer Intelligence & Personalisation</h4>
-                    <p class="text-slate-300 mt-3">
-                        We engineer unified customer data platforms that empower you to predict behaviour, segment audiences, and deliver real-time personalisation.
-                    </p>
-                </a>
-                <!-- Service 3: Process Automation -->
-                <a href="services/intelligent-process-automation.html" class="block bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <h4 class="text-2xl font-semibold text-white mt-2">Intelligent Process Automation</h4>
-                    <p class="text-slate-300 mt-3">
-                        Our services help you design and implement automated workflows that combine AI-based decisioning with RPA to enhance productivity and accuracy.
-                    </p>
-                </a>
-            </div>
-            <div class="text-center mt-12">
-                <a href="services.html" class="text-lg text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">
-                    Explore All Services &rarr;
-                </a>
-            </div>
-        </section>
-
-        <!-- Why Choose Us Section (New) -->
-        <section id="why-us" class="py-24 bg-slate-800 rounded-3xl">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Image Placeholder -->
-                <div class="px-8">
-                    <img src="assets/img_partner.jpg" alt="Your Engineering Partner for Data & AI" class="rounded-2xl shadow-xl w-full">
-                </div>
-                <!-- Text Content -->
-                <div class="px-8">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white">Your Engineering Partner for Data & AI</h3>
-                    <p class="text-lg text-slate-300 mt-6">
-                        We are your dedicated engineering partner, translating complex technical requirements into tangible business value. Our expertise is building the foundational systems that make your data team successful.
-                    </p>
-                    <ul class="mt-6 space-y-4 text-slate-300">
-                        <li class="flex items-start">
-                            <span class="text-cyan-400 mr-3 mt-1 flex-shrink-0">&#10003;</span>
-                            <div>
-                                <strong>Business-Focused Outcomes:</strong> We architect and implement data infrastructure that reduces costs, drives revenue, and improves efficiency.
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-cyan-400 mr-3 mt-1 flex-shrink-0">&#10003;</span>
-                            <div>
-                                <strong>Deep Engineering Expertise:</strong> Our projects are led by seasoned data engineers and architects with 15+ years of experience in data warehousing, pipeline automation, and AI infrastructure.
-                            </div>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-cyan-400 mr-3 mt-1 flex-shrink-0">&#10003;</span>
-                            <div>
-                                <strong>Pragmatic & Agile:</strong> We provide clear roadmaps and agile implementation, ensuring you see value quickly without getting lost in jargon.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Case Studies Summary Section (on Homepage) -->
-        <section id="home-case-studies" class="py-24">
-            <h3 class="text-3xl md:text-4xl font-bold text-center text-white">
-                Our Proven Impact
-            </h3>
-            <p class="text-lg text-slate-400 text-center mt-4 max-w-2xl mx-auto">
-                See how we've helped businesses like yours succeed with data.
-            </p>
-            <div class="grid md:grid-cols-2 gap-8 mt-16">
-                <!-- ECI Case Study -->
-                <a href="case-studies/retail-ecommerce.html" class="block bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <div class="p-8">
-                        <h4 class="text-2xl font-semibold text-white">Powering a Retail Giant</h4>
-                        <p class="text-slate-300 mt-3">
-                            Enabled a 360-degree customer view and unified data assets for a major European retail conglomerate.
-                        </p>
-                    </div>
-                </a>
-                <!-- Santander Case Study -->
-                <a href="case-studies/financial-services.html" class="block bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1 transition-all duration-300">
-                    <div class="p-8">
-                        <h4 class="text-2xl font-semibold text-white">Real-Time AI for a Financial Leader</h4>
-                        <p class="text-slate-300 mt-3">
-                            Augmented a legacy marketing platform with a real-time AI "brain" to enable intelligent, event-driven customer engagement.
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="text-center mt-12">
-                <a href="case-studies.html" class="text-lg text-cyan-400 hover:text-cyan-300 transition duration-300 font-medium">
-                    View All Case Studies &rarr;
-                </a>
-            </div>
-        </section>
-        
-        <!-- CTA Section (on Homepage) -->
-        <section id="home-contact" class="py-24 text-center">
-            <h3 class="text-3xl md:text-4xl font-bold text-white">
-                Let's Engineer Your Data-Driven Future
-            </h3>
-            <p class="text-lg text-slate-400 mt-4 max-w-2xl mx-auto">
-                Ready to start your project or just want to learn more? We'd love to hear from you.
-            </p>
-            <a href="contact.html" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-lg text-lg mt-10 inline-block hover:bg-cyan-600 transition duration-300">
-                Get in Touch
-            </a>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-800 mt-16">
-        <div class="container mx-auto max-w-6xl px-6 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center text-slate-500">
-                <p>&copy; 2025 AvailLogic. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="privacy.html" class="hover:text-cyan-400 transition duration-300">Privacy Policy</a>
-                    <a href="terms.html" class="hover:text-cyan-400 transition duration-300">Service Terms</a>
-                    <a href="disclaimer.html" class="hover:text-cyan-400 transition duration-300">Disclaimer</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JS for Mobile Menu -->
-    <script src="js/main.js"></script>
-
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>
