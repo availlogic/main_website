@@ -54,11 +54,10 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-slate-deep/90 backdrop-blur-xl border-b border-white/5 shadow-lg'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-slate-deep/90 backdrop-blur-xl border-b border-white/5 shadow-lg'
+        : 'bg-transparent'
+        }`}
     >
       <div className="container-custom">
         <nav className="flex items-center justify-between h-20">
@@ -191,6 +190,14 @@ export default function Header() {
               </AnimatePresence>
             </div>
 
+            {/* Pricing Link */}
+            <Link
+              to="/pricing"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Pricing
+            </Link>
+
             <a
               href="/#about"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -292,6 +299,17 @@ export default function Header() {
                     className="flex items-center gap-3 px-4 py-2 text-primary font-medium"
                   >
                     View All Case Studies
+                  </Link>
+                </div>
+
+                {/* Pricing Link */}
+                <div className="border-t border-white/5 pt-4">
+                  <Link
+                    to="/pricing"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="block px-4 py-2 text-foreground font-medium"
+                  >
+                    Pricing
                   </Link>
                 </div>
 

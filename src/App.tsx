@@ -9,6 +9,7 @@ import ServicesIndex from './pages/services/ServicesIndex';
 import ServiceDetail from './pages/services/ServiceDetail';
 import CaseStudiesIndex from './pages/case-studies/CaseStudiesIndex';
 import CaseStudyDetail from './pages/case-studies/CaseStudyDetail';
+import Pricing from './pages/Pricing';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy';
 import TermsOfService from './pages/legal/TermsOfService';
 import Disclaimer from './pages/legal/Disclaimer';
@@ -36,6 +37,7 @@ function App() {
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/case-studies" element={<CaseStudiesIndex />} />
             <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
