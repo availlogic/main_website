@@ -198,24 +198,7 @@ export default function ServiceDetail() {
           </div>
         </div>
 
-        {/* Other Services */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <h2 className="text-2xl font-bold font-heading mb-6 text-center">
-            Explore Other Services
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {service
-              ? Array.from({ length: 4 }).map((_, idx) => {
-                  const otherService = service;
-                  return null;
-                })
-              : null}
-          </div>
-        </motion.div>
+
       </div>
     </div>
   );

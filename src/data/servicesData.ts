@@ -41,7 +41,7 @@ These systems can understand natural language nuances, maintain conversation con
       'Appointment scheduling and reminders',
       'FAQ and knowledge base navigation'
     ],
-    technologies: ['Python', 'LangChain', 'OpenAI/GPT', 'Rasa', 'Dialogflow', 'FastAPI', 'Redis', 'PostgreSQL'],
+    technologies: ['Python', 'LangChain', 'OpenAI/GPT', 'Anthropic/Claude', 'OpenRouter', 'FastAPI', 'Redis', 'PostgreSQL'],
     architectureDiagram: `graph TB
     subgraph "User Interface Layer"
         A[Web Chat Widget]
@@ -62,7 +62,7 @@ These systems can understand natural language nuances, maintain conversation con
         J[CRM Systems]
         K[Knowledge Base]
         L[Backend APIs]
-        M[Database]
+        M[Conversation Store]
     end
 
     A --> E
@@ -72,12 +72,15 @@ These systems can understand natural language nuances, maintain conversation con
     E --> F
     F --> G
     G --> H
+    H --> K
+    H --> J
+    H --> L
+    H --> M
     H --> I
     I --> A
-    I --> J
-    I --> K
-    I --> L
-    H --> M`,
+    I --> B
+    I --> C
+    I --> D`,
     color: 'primary',
     gradient: 'from-primary/20 to-primary/5'
   },
@@ -107,41 +110,44 @@ From intelligent document processing that extracts data from invoices and contra
       'Order processing and fulfillment',
       'Quality assurance and approval chains'
     ],
-    technologies: ['Python', 'Apache Airflow', 'Temporal', 'UiPath', 'Automation Anywhere', 'GPT-4', 'LangChain', 'RabbitMQ'],
+    technologies: ['Python', 'Apache Airflow', 'Temporal', 'n8n', 'Celery', 'GPT-4', 'LangChain', 'Redis Streams'],
     architectureDiagram: `graph TB
     subgraph "Input Sources"
-        A[Documents]
-        B[Emails]
-        C[API Calls]
-        D[Scheduled Triggers]
+        A[Documents & Emails]
+        B[API Events]
+        C[Scheduled Triggers]
     end
 
     subgraph "AI Processing Core"
-        E[Document Intelligence]
-        F[AI Decision Engine]
-        G[Workflow Orchestrator]
-        H[Exception Handler]
+        D[Document Intelligence]
+        E[AI Decision Engine]
+        F[Workflow Orchestrator]
+        G[Exception Handler]
     end
 
     subgraph "Actions & Outputs"
-        I[Database Updates]
-        J[Email Notifications]
-        K[API Integrations]
-        L[Human Approvals]
+        H[Database Updates]
+        I[Notifications]
+        J[API Integrations]
+        K[Human Approvals]
     end
 
-    A --> E
-    B --> E
-    C --> F
-    D --> G
+    subgraph "Monitoring"
+        L[Analytics Dashboard]
+    end
 
+    A --> D
+    D --> E
+    B --> F
+    C --> F
     E --> F
-    F --> G
-    G --> H
-    H --> I
-    H --> J
-    H --> K
-    H --> L`,
+    F --> H
+    F --> I
+    F --> J
+    F --> K
+    F -.-> G
+    G --> K
+    F --> L`,
     color: 'secondary',
     gradient: 'from-secondary/20 to-secondary/5'
   },
@@ -198,13 +204,13 @@ I design and implement RAG architectures that can handle enterprise-scale knowle
     subgraph "Generation"
         N[Context Assembly]
         O[LLM Processing]
-        P[Response Generator]
+        P[Response + Citations]
     end
 
     A --> E
     B --> E
-    C --> F
-    D --> F
+    C --> E
+    D --> E
     E --> F
     F --> G
     G --> H
@@ -246,39 +252,37 @@ These systems go beyond simple voice commands to engage in natural, flowing conv
       'Accessibility solutions',
       'Survey and feedback collection'
     ],
-    technologies: ['Deepgram', 'AssemblyAI', 'ElevenLabs', 'Play.ht', 'Twilio', 'Asterisk', 'Python', 'WebRTC'],
+    technologies: ['Deepgram', 'AssemblyAI', 'ElevenLabs', 'OpenAI TTS', 'Twilio', 'Vapi', 'Python', 'WebRTC'],
     architectureDiagram: `graph TB
     subgraph "Audio Input"
-        A[Phone Call]
-        B[Microphone]
+        A[Phone / SIP]
+        B[WebRTC Stream]
         C[Audio File]
-        D[WebRTC Stream]
     end
 
     subgraph "Speech Processing"
-        E[Audio Codec]
-        F[Noise Reduction]
-        G[Voice Activity Detection]
-        H[Speech-to-Text]
+        D[Audio Codec]
+        E[Noise Reduction]
+        F[VAD / Barge-in Detection]
+        G[Speech-to-Text]
     end
 
     subgraph "AI Core"
-        I[Intent Recognition]
-        J[Dialogue Manager]
-        K[Context Memory]
-        L[LLM Processing]
+        H[Intent Recognition]
+        I[Dialogue Manager]
+        J[Context Memory]
+        K[LLM Processing]
     end
 
     subgraph "Speech Output"
-        M[Response Generation]
-        N[Text-to-Speech]
-        O[Voice Modulation]
-        P[Audio Output]
+        L[Response Generation]
+        M[Text-to-Speech]
+        N[Audio Output]
     end
 
-    A --> E
-    B --> E
-    C --> E
+    A --> D
+    B --> D
+    C --> D
     D --> E
     E --> F
     F --> G
@@ -289,8 +293,9 @@ These systems go beyond simple voice commands to engage in natural, flowing conv
     K --> L
     L --> M
     M --> N
-    N --> O
-    O --> P`,
+    N --> A
+    N --> B
+    F -.->|Interrupt| L`,
     color: 'primary',
     gradient: 'from-primary/20 to-primary/5'
   },
@@ -320,7 +325,7 @@ I architect and implement multi-agent systems where agents can have distinct rol
       'Supply chain optimization',
       'Autonomous DevOps and code review'
     ],
-    technologies: ['LangChain Agents', 'AutoGen', 'CrewAI', 'Microsoft Autogen', 'Python', 'FastAPI', 'Redis', 'gRPC'],
+    technologies: ['LangGraph', 'AutoGen', 'CrewAI', 'Python', 'FastAPI', 'Redis', 'gRPC'],
     architectureDiagram: `graph TB
     subgraph "User Interface"
         A[User Request]
@@ -329,7 +334,7 @@ I architect and implement multi-agent systems where agents can have distinct rol
 
     subgraph "Orchestration Layer"
         C[Orchestrator Agent]
-        D[Task Router]
+        D[Task Planner]
         E[Result Aggregator]
     end
 
@@ -340,10 +345,10 @@ I architect and implement multi-agent systems where agents can have distinct rol
         I[Review Agent]
     end
 
-    subgraph "Knowledge Layer"
-        J[Shared Memory]
+    subgraph "Shared Resources"
+        J[Agent Memory]
         K[Knowledge Base]
-        L[External Tools]
+        L[External Tools & APIs]
     end
 
     A --> C
@@ -353,20 +358,19 @@ I architect and implement multi-agent systems where agents can have distinct rol
     D --> G
     D --> H
     D --> I
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-    F --> K
-    G --> K
-    H --> K
-    I --> K
-    H --> L
     F --> E
     G --> E
     H --> E
     I --> E
-    E --> A`,
+    E --> C
+    C --> A
+    F --> J
+    G --> J
+    H --> J
+    I --> J
+    J --> K
+    F --> L
+    H --> L`,
     color: 'secondary',
     gradient: 'from-secondary/20 to-secondary/5'
   }

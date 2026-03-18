@@ -21,7 +21,7 @@ export default function CaseStudiesIndex() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-white/10 mb-6">
               <Trophy className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Case Studies Ammunition</span>
+              <span className="text-sm text-muted-foreground">Client Success Stories</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
               Real Results. <span className="gradient-text">Hard Numbers.</span>
@@ -39,10 +39,10 @@ export default function CaseStudiesIndex() {
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
           >
             {[
-              { icon: DollarSign, value: '$2.6M+', label: 'Total Client Savings', color: 'text-primary' },
-              { icon: TrendingUp, value: '89%', label: 'Average Efficiency Gain', color: 'text-secondary' },
-              { icon: Clock, value: '95%', label: 'Faster Time-to-Value', color: 'text-accent' },
-              { icon: Users, value: '4.8/5', label: 'Average CSAT Score', color: 'text-primary' }
+              { icon: DollarSign, value: '$4M+', label: 'Total Client Value Delivered', color: 'text-primary' },
+              { icon: TrendingUp, value: '5', label: 'Industries Served', color: 'text-secondary' },
+              { icon: Clock, value: '71–95%', label: 'Efficiency Gains', color: 'text-accent' },
+              { icon: Users, value: '3–5 mo', label: 'Typical Engagement', color: 'text-primary' }
             ].map((stat, idx) => (
               <div key={idx} className="glass-card p-6 text-center">
                 <stat.icon className={`w-8 h-8 mx-auto mb-3 ${stat.color}`} />

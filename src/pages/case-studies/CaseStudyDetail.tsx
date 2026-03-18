@@ -252,7 +252,7 @@ export default function CaseStudyDetail() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="glass-card p-6"
             >
-              <h3 className="text-lg font-semibold font-heading mb-4">Technologies Used</h3>
+              <h3 className="text-lg font-semibold font-heading mb-4">Key Highlights</h3>
               <div className="flex flex-wrap gap-2">
                 {study.tags.map((tag) => (
                   <span
@@ -276,7 +276,7 @@ export default function CaseStudyDetail() {
                 Want Similar Results?
               </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Let's discuss how we can achieve this for your business.
+                Let's discuss how I can achieve this for your business.
               </p>
               <a
                 href="https://calendly.com/availlogic/book"

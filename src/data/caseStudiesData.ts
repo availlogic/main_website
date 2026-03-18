@@ -39,7 +39,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: '1',
     slug: 'logistics-chatbot-response-time',
-    title: 'How We Cut Inquiry Response Time by 90% for a Logistics Giant',
+    title: 'How We Cut Inquiry Response Time by 89% for a Logistics Giant',
     subtitle: 'AI-Powered Customer Service Automation',
     serviceSlug: 'ai-chatbots-conversational-interfaces',
     serviceName: 'AI Chatbots & Conversational Interfaces',
@@ -68,12 +68,12 @@ export const caseStudies: CaseStudy[] = [
     keyQuote: 'We went from losing customers to competitors to winning them back. The ROI was positive within 60 days.',
     quoteAuthor: 'VP of Customer Experience',
     quoteRole: 'Global Logistics Provider',
-    tags: ['NLP', 'Multi-language', 'TMSI Integration', '24/7 Support']
+    tags: ['NLP', 'Multi-language', 'TMS Integration', '24/7 Support']
   },
   {
     id: '2',
     slug: 'healthcare-automation-cost-savings',
-    title: 'How AI Automation Saved a Clinic Network $50,000 Annually',
+    title: 'How AI Automation Saved a Clinic Network $200,000+ in First-Year Savings',
     subtitle: 'Intelligent Business Process Automation',
     serviceSlug: 'ai-business-automation-workflow-intelligence',
     serviceName: 'AI Business Automation & Workflow Intelligence',
@@ -95,7 +95,7 @@ export const caseStudies: CaseStudy[] = [
     result: `Administrative hours dropped from 1,800 to 520 monthly—a 71% reduction. The AR cycle shrank from 45 days to 23 days, improving cash flow by $1.2M. Staff turnover fell to 12%, saving an estimated $180,000 in recruitment costs annually. The total documented savings: $203,000 in year one, with ongoing annual savings of $50,000+ in reduced labor costs alone. But the intangibles mattered more: clinical staff now spend 40% more time with patients.`,
     metrics: [
       { label: 'Admin Hours/Month', before: '1,800 hrs', after: '520 hrs', improvement: '71% reduction', isPositive: true, icon: Clock },
-      { label: 'AR Cycle', before: '45 days', after: '23 days', improvement: '49% faster', isPositive: true, icon: TrendingUp },
+      { label: 'AR Cycle', before: '45 days', after: '23 days', improvement: '49% reduction', isPositive: true, icon: TrendingUp },
       { label: 'Annual Savings', before: '$0', after: '$203,000', improvement: '+$203K', isPositive: true, icon: DollarSign },
       { label: 'Staff Turnover', before: '28%', after: '12%', improvement: '57% reduction', isPositive: true, icon: Users }
     ],
@@ -141,7 +141,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: '4',
     slug: 'retail-voice-agent-conversions',
-    title: 'AI Voice Agents Increased Conversion Rate by 340%',
+    title: 'AI Voice Agents Increased Conversion Rate by 330%',
     subtitle: 'Voice-Powered Sales Automation',
     serviceSlug: 'ai-voice-assistants-voice-agents',
     serviceName: 'AI Voice Assistants / Voice Agents',
@@ -151,7 +151,7 @@ export const caseStudies: CaseStudy[] = [
     color: 'primary',
     gradient: 'from-primary/20 to-primary/5',
     icon: Mic,
-    situation: `An enterprise retailer was losing 67% of online shoppers who abandoned their carts—but their bigger problem was phone calls. Their call center handled 15,000 calls monthly, mostly pre-purchase inquiries. Conversion rate from phone inquiries was only 12%. Why? Human agents could only work 8-hour shifts, leaving 16 hours daily with no phone support. Peak call times (lunch, evening) were chronically understaffed. Average call duration was 8 minutes, but 40% of that was hold time. The estimated monthly lost revenue: $2.3M.`,
+    situation: `An enterprise retailer was losing 67% of online shoppers who abandoned their carts—but their bigger problem was phone calls. Their call center handled 15,000 calls monthly, mostly pre-purchase inquiries. Conversion rate from phone inquiries was only 12%. Why? Human agents could only work 8-hour shifts, leaving 16 hours daily with no phone support. Peak call times (lunch, evening) were chronically understaffed. Average call duration was 8 minutes, but 40% of that was hold time. The estimated monthly lost revenue: $1.8M.`,
     task: `Deploy an AI voice agent that handles 70% of incoming calls, operates 24/7, and achieves at least a 35% conversion rate. The agent must handle objections, provide personalized product recommendations, process orders, and seamlessly transfer complex queries to human agents. Must integrate with their CRM and inventory systems in real-time.`,
     actions: [
       'Built a natural voice agent using state-of-the-art TTS with brand-appropriate tone and pacing',
@@ -160,14 +160,14 @@ export const caseStudies: CaseStudy[] = [
       'Created intelligent call routing that identifies high-value customers for immediate human handoff',
       'Established A/B testing framework for continuous voice script optimization'
     ],
-    result: `The voice agent now handles 73% of all incoming calls—9,000+ monthly—operating 24/7 without breaks, vacations, or sick days. Conversion rate jumped from 12% to 52%, a 340% improvement. Monthly lost revenue dropped from $2.3M to $280,000. The voice agent processes orders averaging $127 per transaction, generating $1.1M in monthly attributed revenue. Human agents now focus exclusively on complex sales and relationship building, improving their conversion rate by 45%. Customer satisfaction with phone support increased to 4.6/5.`,
+    result: `The voice agent now handles 73% of all incoming calls—9,000+ monthly—operating 24/7 without breaks, vacations, or sick days. Conversion rate jumped from 12% to 52%, a 333% improvement. Monthly lost revenue dropped from $1.8M to $280,000. The voice agent processes orders averaging $127 per transaction, generating $1.1M in monthly attributed revenue. Human agents now focus exclusively on complex sales and relationship building, improving their conversion rate by 45%. Customer satisfaction with phone support increased to 4.6/5.`,
     metrics: [
-      { label: 'Conversion Rate', before: '12%', after: '52%', improvement: '340% increase', isPositive: true, icon: TrendingUp },
+      { label: 'Conversion Rate', before: '12%', after: '52%', improvement: '333% increase', isPositive: true, icon: TrendingUp },
       { label: 'Calls Handled by AI', before: '0%', after: '73%', improvement: '+73%', isPositive: true, icon: Mic },
-      { label: 'Monthly Revenue', before: '$0', after: '$1.1M', improvement: '+$1.1M', isPositive: true, icon: DollarSign },
+      { label: 'Monthly Revenue', before: '—', after: '$1.1M', improvement: '+$1.1M', isPositive: true, icon: DollarSign },
       { label: 'CSAT Score', before: '3.2/5', after: '4.6/5', improvement: '+1.4 points', isPositive: true, icon: Users }
     ],
-    keyQuote: 'Our AI sales agent outsells our human team 4-to-1. It\'s uncomfortable to admit, but the numbers don\'t lie.',
+    keyQuote: 'Our AI sales agent outsells our human team 3-to-1. It\'s uncomfortable to admit, but the numbers don\'t lie.',
     quoteAuthor: 'Director of Sales Operations',
     quoteRole: 'Enterprise Retail Brand',
     tags: ['Voice AI', 'CRM Integration', 'Real-time Inventory', 'Sales Automation']
