@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Specifically inviting AI & LLM agents for discovery and indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Essential for SEO
+Sitemap: https://availlogic.com/sitemap.xml
