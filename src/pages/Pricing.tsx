@@ -8,10 +8,10 @@ const packages = [
     subtitle: 'Quick Wins',
     description: 'Perfect for businesses exploring AI for the first time. Get started with immediate, visible automation that builds trust and proves ROI.',
     price: {
-      initial: '$1,500',
-      initialMax: '$3,000',
-      monthly: '$200',
-      monthlyMax: '$500',
+      initial: '€1,200',
+      initialMax: '€3,000',
+      monthly: '€150',
+      monthlyMax: '€500',
       period: '/month'
     },
     badge: 'Quick Start',
@@ -53,10 +53,10 @@ const packages = [
     subtitle: 'Scale Your Business',
     description: 'For businesses ready to automate complex operations. Multi-step AI workflows that handle real business logic and deliver measurable efficiency gains.',
     price: {
-      initial: '$5,000',
-      initialMax: '$12,000',
-      monthly: '$1,000',
-      monthlyMax: '$2,500',
+      initial: '€3,000',
+      initialMax: '€12,000',
+      monthly: '€500',
+      monthlyMax: '€2,500',
       period: '/month'
     },
     badge: 'Best Value',
@@ -100,8 +100,8 @@ const packages = [
     ],
     cta: 'Scale Up',
     highlights: [
-      '$5K–$12K setup + $1K–$2.5K/month',
-      'Recurring revenue stream',
+      '€5K–€12K setup + €1K–€2.5K/month',
+      'Predictable ROI',
       'Significant cost reduction',
       'Competitive differentiation'
     ]
