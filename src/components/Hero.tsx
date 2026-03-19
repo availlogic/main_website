@@ -49,7 +49,7 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed"
             >
-              Specialized AI Development & Intelligent Automation. Senior-level engineering for when off-the-shelf solutions fall short. I build the AI systems that drive your business forward.
+              Specialized AI & Intelligent Automation for Irish SMEs. Get fast, pragmatic solutions with zero jargon. Experience direct, real-human video communication from day one.
             </motion.p>
 
             {/* CTA Buttons */}

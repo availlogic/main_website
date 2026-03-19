@@ -4,20 +4,20 @@ import { CheckCircle2, Users, Zap, Shield, ArrowRight } from 'lucide-react';
 const benefits = [
   {
     icon: Users,
-    title: 'Direct Access',
-    description: 'No middlemen. You work directly with a senior AI engineer with 15+ years of experience.',
-    highlight: 'Direct'
+    title: 'Real-Human Video Syncs',
+    description: 'Forget endless email chains. We jump on quick video calls so you get direct, face-to-face updates and absolute clarity on progress.',
+    highlight: 'Clear'
   },
   {
     icon: Zap,
-    title: 'Agile & Pragmatic',
-    description: 'Clear roadmaps and agile implementation. See value quickly without getting lost in jargon.',
+    title: 'Fast Delivery',
+    description: 'Clear roadmaps and agile implementation. We build functional prototypes quickly so you see value in weeks, not months.',
     highlight: 'Fast'
   },
   {
     icon: Shield,
-    title: 'Business-Focused',
-    description: 'I architect AI systems that reduce costs, drive revenue, and improve operational efficiency.',
+    title: 'Business-Focused for SMEs',
+    description: 'Tailored specifically for Irish businesses. We implement AI systems that reduce costs, save time, and immediately improve your operations.',
     highlight: 'ROI'
   }
 ];
@@ -27,21 +27,21 @@ const comparison = [
     title: 'Traditional Agency',
     issues: [
       'Expensive overhead costs',
-      'Junior developers handling your project',
       'Slow communication through account managers',
-      'Fixed contracts with limited flexibility',
-      'Generic solutions'
+      'Hidden behind jargon and emails',
+      'Months-long delivery cycles',
+      'Generic off-the-shelf solutions'
     ],
     className: 'border-red-500/30'
   },
   {
     title: 'AvailLogic',
     advantages: [
-      'Senior-level expertise at competitive rates',
-      'Direct collaboration with the expert',
-      'Fast, responsive communication',
-      'Flexible engagement models',
-      'Tailored solutions for your specific needs'
+      'Direct video communication with the expert',
+      'Fast delivery cycles (weeks, not months)',
+      'Zero jargon, simple business terms',
+      'Clear, transparent pricing',
+      'Tailored for local Irish businesses'
     ],
     className: 'border-primary'
   }

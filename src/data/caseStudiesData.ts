@@ -189,7 +189,7 @@ export const caseStudies: CaseStudy[] = [
       'Created a reconciliation step that matches the supplier data to the store\'s Shopify inventory.',
       'Automated the update process via the Shopify API, with an automatic email summary sent to the owner detailing what was updated and flagging any discontinued items.'
     ],
-    result: `The automated system completely replaced the 6-hour manual Monday task. The store\'s inventory is now updated daily as supplier emails arrive, dramatically reducing the chance of selling out-of-stock items and having to issue refunds. The owner reclaimed almost a full working day every week, which they redirected into marketing and sourcing new products, resulting in a 15% increase in online sales that quarter.`,
+    result: `The automated system completely replaced the 6-hour manual Monday task. The store's inventory is now updated daily as supplier emails arrive, dramatically reducing the chance of selling out-of-stock items and having to issue refunds. The owner reclaimed almost a full working day every week, which they redirected into marketing and sourcing new products, resulting in a 15% increase in online sales that quarter.`,
     metrics: [
       { label: 'Manual Admin Time', before: '6 hours/week', after: '0 hours', improvement: '100% Automated', isPositive: true, icon: Clock },
       { label: 'Out-of-Stock Errors', before: 'Frequent', after: 'Rare', improvement: 'Better Reliability', isPositive: true, icon: Target },
