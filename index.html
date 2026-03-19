@@ -6,20 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Primary SEO Meta -->
-  <meta name="description" content="AvailLogic — AI consultancy, development & deployment based in Ireland. We build AI chatbots, voice agents, RAG knowledge bases, business automation workflows, and multi-agent systems. Senior-level engineering for when off-the-shelf tools fail." />
-  <meta name="keywords" content="AI chatbot development, AI voice agent, RAG knowledge base, AI business automation, multi-agent systems, AI consulting Ireland, LLM integration, conversational AI, workflow intelligence, AI deployment services" />
+  <meta name="description"
+    content="AvailLogic — AI consultancy, development & deployment based in Ireland. We build AI chatbots, voice agents, RAG knowledge bases, business automation workflows, and multi-agent systems. Senior-level engineering for when off-the-shelf tools fail." />
+  <meta name="keywords"
+    content="AI chatbot development, AI voice agent, RAG knowledge base, AI business automation, multi-agent systems, AI consulting Ireland, LLM integration, conversational AI, workflow intelligence, AI deployment services" />
   <meta name="author" content="AvailLogic" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <!-- AEO / GEO / LLMO — AI-readable site summary for LLM crawlers -->
-  <meta name="ai:summary" content="AvailLogic is an Ireland-based AI consultancy offering five core services: (1) AI Chatbots & Conversational Interfaces, (2) AI Business Automation & Workflow Intelligence, (3) RAG Knowledge Bases, (4) AI Voice Assistants / Voice Agents, and (5) AI Integrations & Multi-Agent Systems. The company provides senior-level, end-to-end AI development — from strategy and architecture through to deployment and support. AvailLogic specialises in building custom AI solutions for businesses that need more than off-the-shelf tools." />
-  <meta name="ai:services" content="AI Chatbots, Conversational Interfaces, AI Business Automation, Workflow Intelligence, RAG Knowledge Base, AI Voice Assistants, Voice Agents, AI Integrations, Multi-Agent Systems, LLM Integration, AI Consulting" />
+  <meta name="ai:summary"
+    content="AvailLogic is an Ireland-based AI consultancy offering five core services: (1) AI Chatbots & Conversational Interfaces, (2) AI Business Automation & Workflow Intelligence, (3) RAG Knowledge Bases, (4) AI Voice Assistants / Voice Agents, and (5) AI Integrations & Multi-Agent Systems. The company provides senior-level, end-to-end AI development — from strategy and architecture through to deployment and support. AvailLogic specialises in building custom AI solutions for businesses that need more than off-the-shelf tools." />
+  <meta name="ai:services"
+    content="AI Chatbots, Conversational Interfaces, AI Business Automation, Workflow Intelligence, RAG Knowledge Base, AI Voice Assistants, Voice Agents, AI Integrations, Multi-Agent Systems, LLM Integration, AI Consulting" />
   <meta name="ai:location" content="Ireland (Remote — Available Globally)" />
   <meta name="ai:contact" content="info@availlogic.com" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="AvailLogic — AI Development & Intelligent Automation" />
-  <meta property="og:description" content="Custom AI chatbots, voice agents, RAG knowledge bases, business automation, and multi-agent systems. Senior-level AI engineering based in Ireland." />
+  <meta property="og:description"
+    content="Custom AI chatbots, voice agents, RAG knowledge bases, business automation, and multi-agent systems. Senior-level AI engineering based in Ireland." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://availlogic.com" />
   <meta property="og:site_name" content="AvailLogic" />
@@ -28,7 +33,8 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AvailLogic — AI Development & Intelligent Automation" />
-  <meta name="twitter:description" content="Custom AI chatbots, voice agents, RAG knowledge bases, business automation, and multi-agent systems. Senior-level AI engineering." />
+  <meta name="twitter:description"
+    content="Custom AI chatbots, voice agents, RAG knowledge bases, business automation, and multi-agent systems. Senior-level AI engineering." />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/logo_nobg_filled.png" />
@@ -163,6 +169,24 @@
 
 <body>
   <div id="root"></div>
+
+  <!-- This hidden form is for Netlify to detect the form during build -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="company" />
+    <select name="projectType">
+      <option value="ai-chatbots">AI Chatbots & Conversational Interfaces</option>
+      <option value="ai-automation">AI Business Automation & Workflow</option>
+      <option value="rag-knowledge">RAG Knowledge Base</option>
+      <option value="ai-voice">AI Voice Assistants</option>
+      <option value="ai-integrations">AI Integrations & Multi-Agent</option>
+      <option value="consulting">Consulting</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea name="message"></textarea>
+  </form>
+
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

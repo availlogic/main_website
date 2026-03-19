@@ -2,6 +2,13 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, ArrowRight, Github, Linkedin, Send } from 'lucide-react';
 
+/* Netlify Forms requires URL-encoded format */
+const encode = (data: Record<string, string>) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -11,11 +18,28 @@ export default function Contact() {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission - could integrate with email service
-    const mailtoLink = `mailto:info@availlogic.com?subject=Project Inquiry from ${formData.name}&body=${encodeURIComponent(formData.message)}`;
-    window.location.href = mailtoLink;
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': 'contact',
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          projectType: formData.projectType,
+          message: formData.message
+        })
+      });
+
+      window.location.href = '/?success=true';
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('There was an error submitting the form. Please try again.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -148,7 +172,9 @@ export default function Contact() {
                 Send a Message
               </h3>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form name="contact" method="POST" onSubmit={handleSubmit} className="space-y-6">
+                {/* Netlify form handling */}
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
