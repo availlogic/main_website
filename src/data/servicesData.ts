@@ -19,358 +19,209 @@ export const services: Service[] = [
     icon: MessageSquare,
     title: 'AI Chatbots & Conversational Interfaces',
     slug: 'ai-chatbots-conversational-interfaces',
-    description: 'Build intelligent conversational systems that understand context, handle complex queries, and deliver human-like interactions across multiple channels.',
-    longDescription: `AI-powered chatbots and conversational interfaces are transforming how businesses interact with their customers. I design and build sophisticated dialogue systems that go beyond simple Q&A patterns to deliver truly intelligent, context-aware conversations.
+    description: 'Provide instant, 24/7 customer support with smart chatbots that understand your business and answer customer queries naturally.',
+    longDescription: `AI-powered chatbots are no longer just for big tech companies—they are an essential tool for local businesses looking to improve customer service without expanding their headcount. I build smart conversational assistants that understand the context of your business, answer repetitive questions accurately, and know exactly when to hand a complex issue over to your human team.
 
-These systems can understand natural language nuances, maintain conversation context across multiple exchanges, detect sentiment and intent, and seamlessly hand off to human agents when needed. Whether you need a customer service bot, sales assistant, or internal helpdesk solution, I create conversational AI that feels natural and delivers real business value.`,
+Whether it's a website widget to help online shoppers or a WhatsApp bot for appointment scheduling, these systems feel natural to your customers while freeing up your staff to focus on the work that really matters.`,
     features: [
-      'Natural Language Understanding (NLU) with intent classification',
-      'Context-aware conversation management and memory',
-      'Multi-channel deployment (web, mobile, messaging platforms)',
-      'Sentiment analysis and emotion detection',
-      'Intent detection and entity extraction',
-      'Integration with CRM, ERP, and backend systems',
-      'Human handoff workflows and escalation logic',
-      'Conversation analytics and performance monitoring'
+      'Natural, human-like conversation flow',
+      'Integration with your website, WhatsApp, or Facebook Messenger',
+      'Instant answers to common questions (FAQs, opening hours, pricing)',
+      'Seamless handoff to human staff for complex issues',
+      'Secure handling of customer information',
+      'Customized tone of voice to match your brand',
+      'Simple dashboard to review past conversations',
+      'Multilingual support (including understanding local phrases)'
     ],
     useCases: [
-      '24/7 customer support automation',
-      'Lead qualification and nurturing',
-      'Internal IT helpdesk and HR inquiries',
-      'E-commerce product recommendations and checkout',
-      'Appointment scheduling and reminders',
-      'FAQ and knowledge base navigation'
+      '24/7 out-of-hours customer support',
+      'Website visitor lead capture and qualification',
+      'Automated appointment booking and reminders',
+      'Order tracking and delivery updates',
+      'Answering common product or service questions',
+      'Internal staff helper for basic company info'
     ],
-    technologies: ['Python', 'LangChain', 'OpenAI/GPT', 'Anthropic/Claude', 'OpenRouter', 'FastAPI', 'Redis', 'PostgreSQL'],
-    architectureDiagram: `graph TB
-    subgraph "User Interface Layer"
-        A[Web Chat Widget]
-        B[Mobile SDK]
-        C[Messaging Platforms]
-        D[Voice Interface]
-    end
+    technologies: ['OpenAI/GPT', 'Anthropic/Claude', 'LangChain', 'Python', 'FastAPI'],
+    architectureDiagram: `graph TD
+    A[Customer on Website/WhatsApp] -->|Asks Question| B(Smart AI Chatbot)
+    B -->|Checks Knowledge| C[(Your Business Info & FAQs)]
+    C -->|Provides Answer| B
+    B -->|If Simple| A
+    B -.->|If Complex or Requested| D[Human Support Staff]
 
-    subgraph "AI Processing Layer"
-        E[NLU Engine]
-        F[Intent Classifier]
-        G[Entity Extractor]
-        H[Dialogue Manager]
-        I[Response Generator]
-    end
-
-    subgraph "Integration Layer"
-        J[CRM Systems]
-        K[Knowledge Base]
-        L[Backend APIs]
-        M[Conversation Store]
-    end
-
-    A --> E
-    B --> E
-    C --> E
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> K
-    H --> J
-    H --> L
-    H --> M
-    H --> I
-    I --> A
-    I --> B
-    I --> C
-    I --> D`,
+    style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
+    style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style D fill:#fce4ec,stroke:#e91e63,stroke-width:2px`,
     color: 'primary',
     gradient: 'from-primary/20 to-primary/5'
   },
   {
     icon: Workflow,
-    title: 'AI Business Automation & Workflow Intelligence',
+    title: 'Smart Business Automation',
     slug: 'ai-business-automation-workflow-intelligence',
-    description: 'Transform manual processes into intelligent automated workflows that learn, adapt, and optimize based on patterns and outcomes.',
-    longDescription: `AI Business Automation combines the power of artificial intelligence with workflow orchestration to eliminate repetitive tasks, reduce errors, and free up your team for higher-value work. I build intelligent automation systems that don't just follow rigid rules but learn from data and improve over time.
+    description: 'Eliminate repetitive manual tasks like data entry and document processing, freeing your team to focus on growing the business.',
+    longDescription: `Every business has those repetitive, frustrating tasks—copying data from emails into spreadsheets, manually creating invoices, or sorting through PDF attachments. Smart Business Automation uses AI to take over these chores, working faster and with fewer errors than a human ever could.
 
-From intelligent document processing that extracts data from invoices and contracts, to decision engines that handle complex approvals, to cross-system orchestration that coordinates multiple processes—these systems transform how your business operates.`,
+I help small and medium businesses identify their biggest time-wasters and build secure, automated workflows to handle them. This isn't about replacing staff; it's about giving them back the hours they need to focus on your customers and grow your revenue.`,
     features: [
-      'Process mining and workflow analysis',
-      'Intelligent document processing (IDP) with OCR/ICR',
-      'Decision automation and business rules engine',
-      'Real-time workflow optimization and monitoring',
-      'Cross-system orchestration and API integration',
-      'Exception handling and human-in-the-loop workflows',
-      'Performance analytics and bottleneck identification',
-      'Continuous learning and model refinement'
+      'Automated data extraction from PDFs, receipts, and invoices',
+      'Email sorting and automated draft replies',
+      'Connecting different software tools (e.g., matching emails to your CRM)',
+      'Automated report generation and formatting',
+      'Smart decision rules (e.g., flag invoices over €500 for review)',
+      'Secure handling of sensitive financial or personal data',
+      'Clear visibility into what the system is doing',
+      'Easy-to-use human approval steps where necessary'
     ],
     useCases: [
-      'Accounts payable/receivable automation',
-      'Invoice processing and validation',
-      'Employee onboarding workflows',
-      'Compliance monitoring and reporting',
-      'Order processing and fulfillment',
-      'Quality assurance and approval chains'
+      'Processing supplier invoices directly into accounting software',
+      'Extracting customer details from web forms to a CRM',
+      'Automating employee onboarding paperwork',
+      'Sorting and tagging incoming support tickets',
+      'Generating weekly sales or inventory reports',
+      'Updating stock levels across different platforms'
     ],
-    technologies: ['Python', 'Apache Airflow', 'Temporal', 'n8n', 'Celery', 'GPT-4', 'LangChain', 'Redis Streams'],
-    architectureDiagram: `graph TB
-    subgraph "Input Sources"
-        A[Documents & Emails]
-        B[API Events]
-        C[Scheduled Triggers]
-    end
+    technologies: ['Python', 'n8n', 'OpenAI/GPT', 'Document AI'],
+    architectureDiagram: `graph TD
+    A[Incoming Email with PDF Invoice] --> B(AI Document Reader)
+    B -->|Extracts Data| C{Needs Human Approval?}
+    C -->|No| E[(Accounting Software e.g. Xero)]
+    C -->|Yes| D[Review Dashboard for Staff]
+    D -->|Approved| E
+    E --> F[Automated Confirmation Reply]
 
-    subgraph "AI Processing Core"
-        D[Document Intelligence]
-        E[AI Decision Engine]
-        F[Workflow Orchestrator]
-        G[Exception Handler]
-    end
-
-    subgraph "Actions & Outputs"
-        H[Database Updates]
-        I[Notifications]
-        J[API Integrations]
-        K[Human Approvals]
-    end
-
-    subgraph "Monitoring"
-        L[Analytics Dashboard]
-    end
-
-    A --> D
-    D --> E
-    B --> F
-    C --> F
-    E --> F
-    F --> H
-    F --> I
-    F --> J
-    F --> K
-    F -.-> G
-    G --> K
-    F --> L`,
+    style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
+    style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style C fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
+    style D fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style E fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style F fill:#ede7f6,stroke:#673ab7,stroke-width:2px`,
     color: 'secondary',
     gradient: 'from-secondary/20 to-secondary/5'
   },
   {
     icon: Database,
-    title: 'RAG Knowledge Base',
+    title: 'Custom AI Search & Knowledge Bases',
     slug: 'rag-knowledge-base',
-    description: 'Develop retrieval-augmented generation systems that combine your organizational knowledge with LLM capabilities for accurate, context-aware responses.',
-    longDescription: `Retrieval-Augmented Generation (RAG) bridges the gap between large language models and your organization's specific knowledge. Rather than relying solely on general training data, RAG systems retrieve relevant information from your documents, databases, and knowledge bases to provide accurate, sourced answers.
+    description: 'Turn your company\'s scattered documents into an instant, searchable AI assistant that always gives accurate answers based on your own data.',
+    longDescription: `You have years of valuable knowledge locked away in PDFs, Word documents, past emails, and company policies. When staff or clients need answers, they waste time searching. A Custom AI Knowledge Base (technically known as RAG) acts like a super-smart librarian for your business.
 
-I design and implement RAG architectures that can handle enterprise-scale knowledge bases, optimize retrieval for accuracy and relevance, and seamlessly integrate with your existing systems. The result is AI assistants that truly understand your business context and can cite their sources.`,
+It reads all your internal documents securely and lets your team ask questions in plain English. Instead of giving a generic internet answer, the AI provides an exact answer based *only* on your company's documents, and even points to the exact page it found the information on.`,
     features: [
-      'Vector database design and implementation',
-      'Intelligent document chunking strategies',
-      'Semantic search and hybrid retrieval methods',
-      'Source citation and answer traceability',
-      'Knowledge base indexing and updates',
-      'Multi-format document support (PDF, Word, HTML)',
-      'Query expansion and re-ranking',
-      'Guardrails for accurate and safe responses'
+      'Instant answers based strictly on your company data',
+      'No data leakage—your private documents stay private',
+      'Reads PDFs, Word files, Excel, and text documents',
+      'Provides exact citations and source links for every answer',
+      'Easy to update simply by uploading new documents',
+      'Can be used internally by staff or externally by clients',
+      'Reduces onboarding time for new employees',
+      'Prevents the AI from "hallucinating" or making things up'
     ],
     useCases: [
-      'Internal knowledge management and search',
-      'Product documentation assistants',
-      'Research and analysis support',
-      'Compliance and policy question answering',
-      'Technical documentation navigation',
-      'Customer support knowledge base'
+      'Internal search tool for HR policies and company handbooks',
+      'Instant lookup for complex product manuals or technical specs',
+      'Quick reference guide for legal or compliance documents',
+      'Assisting customer support agents to find answers faster',
+      'Training and onboarding tool for new hires',
+      'Searching through years of past project proposals or reports'
     ],
-    technologies: ['Pinecone', 'Weaviate', 'ChromaDB', 'LangChain', 'LlamaIndex', 'OpenAI', 'Claude', 'Python', 'FastAPI'],
-    architectureDiagram: `graph TB
-    subgraph "Knowledge Sources"
-        A[Documents]
-        B[Web Content]
-        C[Databases]
-        D[APIs]
-    end
+    technologies: ['LangChain', 'OpenAI/Claude', 'Vector Databases', 'Python'],
+    architectureDiagram: `graph TD
+    A[Your Company Documents (PDFs, Word, etc.)] --> B(Secure AI Index)
+    C[Staff Member Asks a Question] --> D(AI Search Engine)
+    D -->|Finds Relevant Info| B
+    B -->|Returns Exact Paragraphs| E[AI Formats the Answer]
+    E -->|Provides Answer + Document Link| C
 
-    subgraph "Indexing Pipeline"
-        E[Document Loader]
-        F[Text Splitter]
-        G[Embeddings Model]
-        H[Vector Database]
-    end
-
-    subgraph "Query Processing"
-        I[User Query]
-        J[Query Embedding]
-        K[Vector Search]
-        L[Hybrid Search]
-        M[Reranker]
-    end
-
-    subgraph "Generation"
-        N[Context Assembly]
-        O[LLM Processing]
-        P[Response + Citations]
-    end
-
-    A --> E
-    B --> E
-    C --> E
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    I --> J
-    J --> K
-    J --> L
-    K --> M
-    L --> M
-    M --> N
-    H --> N
-    N --> O
-    O --> P`,
+    style A fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style B fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
+    style C fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style D fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style E fill:#fff9c4,stroke:#fbc02d,stroke-width:2px`,
     color: 'accent',
     gradient: 'from-accent/20 to-accent/5'
   },
   {
     icon: Mic,
-    title: 'AI Voice Assistants / Voice Agents',
+    title: 'AI Phone Receptionists',
     slug: 'ai-voice-assistants-voice-agents',
-    description: 'Create voice-powered AI agents that handle phone calls, conduct meetings, and provide spoken interactions with natural conversation flow.',
-    longDescription: `Voice AI agents represent the next frontier in customer interaction—conversational AI that speaks and listens like a human. I build voice systems capable of handling phone calls, conducting meetings, transcribing conversations, and providing voice-controlled interfaces.
+    description: 'Ensure you never miss a customer call with a natural-sounding AI voice assistant that can answer questions, take messages, and book appointments 24/7.',
+    longDescription: `Missed calls mean missed business. For local clinics, tradespeople, or retail stores, hiring a full-time receptionist for out-of-hours or busy periods isn't always viable. AI Voice Assistants solve this by acting as your reliable, always-on front desk.
 
-These systems go beyond simple voice commands to engage in natural, flowing conversations, understanding context across long exchanges, handling interruptions gracefully, and completing complex tasks autonomously.`,
+These aren't the frustrating "Press 1 for Sales" robot menus of the past. These are conversational AI voices that sound incredibly human, can handle interruptions, answer specific questions about your business, and take detailed messages or appointment requests, instantly sending the summary to your phone or email.`,
     features: [
-      'Speech-to-text with high accuracy transcription',
-      'Natural text-to-speech with voice customization',
-      'Voice activity detection and speaker separation',
-      'Noise cancellation and audio enhancement',
-      'Real-time streaming transcription',
-      'Multi-language and accent support',
-      'Call routing and escalation logic',
-      'Conversation analytics and insights'
+      'Natural, human-sounding voice conversations',
+      'Answers calls immediately, 24/7/365',
+      'Can answer common questions (opening hours, location, services)',
+      'Takes detailed messages and contact information',
+      'Instantly emails or texts you a summary of the call',
+      'Ability to handle multiple calls at the exact same time',
+      'Customized greeting and professional tone',
+      'Reduces the need for customers to leave voicemails'
     ],
     useCases: [
-      'Automated phone-based customer service',
-      'Appointment scheduling via voice',
-      'Meeting transcription and summarization',
-      'Voice-controlled smart interfaces',
-      'Accessibility solutions',
-      'Survey and feedback collection'
+      'Out-of-hours reception for dental or medical clinics',
+      'Overflow call handling during busy retail periods',
+      'Initial call screening and lead capture for trades and services',
+      'Automated restaurant reservation handling',
+      'Providing quick updates on order or repair status',
+      'Taking detailed messages when staff are in meetings'
     ],
-    technologies: ['Deepgram', 'AssemblyAI', 'ElevenLabs', 'OpenAI TTS', 'Twilio', 'Vapi', 'Python', 'WebRTC'],
-    architectureDiagram: `graph TB
-    subgraph "Audio Input"
-        A[Phone / SIP]
-        B[WebRTC Stream]
-        C[Audio File]
-    end
+    technologies: ['Voice AI Platforms', 'Speech-to-Text', 'Text-to-Speech', 'Python'],
+    architectureDiagram: `graph TD
+    A[Customer Calls Your Number] --> B(AI Voice Receptionist)
+    B -->|Listens & Speaks Naturally| A
+    B -.->|Checks Info| C[(Your Business Details/Calendar)]
+    B -->|Takes Message/Details| D(System creates Call Summary)
+    D -->|Sends SMS/Email Alert| E[Business Owner / Staff]
 
-    subgraph "Speech Processing"
-        D[Audio Codec]
-        E[Noise Reduction]
-        F[VAD / Barge-in Detection]
-        G[Speech-to-Text]
-    end
-
-    subgraph "AI Core"
-        H[Intent Recognition]
-        I[Dialogue Manager]
-        J[Context Memory]
-        K[LLM Processing]
-    end
-
-    subgraph "Speech Output"
-        L[Response Generation]
-        M[Text-to-Speech]
-        N[Audio Output]
-    end
-
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> L
-    L --> M
-    M --> N
-    N --> A
-    N --> B
-    F -.->|Interrupt| L`,
+    style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
+    style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style D fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
+    style E fill:#fce4ec,stroke:#e91e63,stroke-width:2px`,
     color: 'primary',
     gradient: 'from-primary/20 to-primary/5'
   },
   {
     icon: Puzzle,
-    title: 'AI Integrations & Multi-Agent Systems',
+    title: 'Custom Software Integrations',
     slug: 'ai-integrations-multi-agent-systems',
-    description: 'Architect complex AI ecosystems where multiple specialized agents collaborate to solve sophisticated problems and handle enterprise-scale operations.',
-    longDescription: `Multi-agent AI systems represent the next evolution in artificial intelligence—where specialized AI agents work together, each handling their domain while collaborating to solve complex problems that no single AI could handle alone.
+    description: 'Make your different software systems talk to each other to stop double-entry and keep your business data perfectly synchronized.',
+    longDescription: `Most businesses use several different tools to run their operations—a website, a CRM, an accounting package, and a booking system. When these systems don't talk to each other, you end up doing the tedious work of copying data from one to the other.
 
-I architect and implement multi-agent systems where agents can have distinct roles, share information, delegate tasks, and collectively handle enterprise-scale operations. This approach enables sophisticated automation scenarios that mirror how human teams actually work.`,
+I build custom bridges between your existing software. Whether it's making sure a sale on your Shopify store automatically updates your inventory and creates an invoice in Xero, or automatically adding new email leads to your CRM, these integrations save time, reduce errors, and let your software work for you, not the other way around.`,
     features: [
-      'Agent orchestration and choreography frameworks',
-      'Role-based agent design and specialization',
-      'Multi-agent communication protocols',
-      'Task decomposition and intelligent routing',
-      'Shared knowledge and memory management',
-      'Enterprise system connectivity and APIs',
-      'Agent monitoring and observability',
-      'Dynamic agent scaling and load balancing'
+      'Connecting platforms that don\'t normally integrate',
+      'Real-time data synchronization across your business',
+      'Elimination of manual copy-pasting',
+      'Automated alerts when specific events happen',
+      'Secure data transfer between systems',
+      'Custom rules for how data should be handled',
+      'Works quietly in the background 24/7',
+      'Scales easily as your business grows'
     ],
     useCases: [
-      'Complex cross-departmental automation',
-      'Research and analysis pipelines',
-      'Autonomous customer service escalation',
-      'Financial analysis and reporting',
-      'Supply chain optimization',
-      'Autonomous DevOps and code review'
+      'Syncing E-commerce sales with Accounting software',
+      'Automatically adding website form submissions to a CRM',
+      'Updating inventory levels across multiple sales channels',
+      'Sending automated SMS reminders from a calendar booking',
+      'Connecting supplier emails directly to stock management',
+      'Creating centralized dashboards from different data sources'
     ],
-    technologies: ['LangGraph', 'AutoGen', 'CrewAI', 'Python', 'FastAPI', 'Redis', 'gRPC'],
-    architectureDiagram: `graph TB
-    subgraph "User Interface"
-        A[User Request]
-        B[Admin Dashboard]
-    end
+    technologies: ['REST APIs', 'Webhooks', 'Python', 'Node.js', 'Automation Platforms'],
+    architectureDiagram: `graph LR
+    A[Your Website / Storefront] -->|New Order| B(Custom Integration Bridge)
+    B -->|Updates Stock| C[Inventory System]
+    B -->|Creates Invoice| D[Accounting Software]
+    B -->|Adds Customer| E[CRM System]
 
-    subgraph "Orchestration Layer"
-        C[Orchestrator Agent]
-        D[Task Planner]
-        E[Result Aggregator]
-    end
-
-    subgraph "Specialized Agents"
-        F[Research Agent]
-        G[Analysis Agent]
-        H[Action Agent]
-        I[Review Agent]
-    end
-
-    subgraph "Shared Resources"
-        J[Agent Memory]
-        K[Knowledge Base]
-        L[External Tools & APIs]
-    end
-
-    A --> C
-    B --> C
-    C --> D
-    D --> F
-    D --> G
-    D --> H
-    D --> I
-    F --> E
-    G --> E
-    H --> E
-    I --> E
-    E --> C
-    C --> A
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-    J --> K
-    F --> L
-    H --> L`,
+    style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
+    style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style D fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style E fill:#e8f5e9,stroke:#4caf50,stroke-width:2px`,
     color: 'secondary',
     gradient: 'from-secondary/20 to-secondary/5'
   }
