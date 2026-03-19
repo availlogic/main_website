@@ -17,7 +17,7 @@ const benefits = [
   {
     icon: Shield,
     title: 'Business-Focused for SMEs',
-    description: 'Tailored specifically for Irish businesses. We implement AI systems that reduce costs, save time, and immediately improve your operations.',
+    description: 'Tailored specifically for SMEs. We implement AI systems that reduce costs, save time, and immediately improve your operations.',
     highlight: 'ROI'
   }
 ];
@@ -41,7 +41,7 @@ const comparison = [
       'Fast delivery cycles (weeks, not months)',
       'Zero jargon, simple business terms',
       'Clear, transparent pricing',
-      'Tailored for local Irish businesses'
+      'Tailored for SMEs globally'
     ],
     className: 'border-primary'
   }
