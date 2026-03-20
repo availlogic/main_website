@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-[128px] animate-pulse-glow" />
 
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -103,12 +103,12 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative hidden lg:block"
+            className="relative hidden lg:block h-full"
           >
             {/* Abstract Dashboard Visual */}
-            <div className="relative">
+            <div className="relative h-full">
               {/* Main Card */}
-              <div className="glass-card p-6 glow-primary">
+              <div className="glass-card p-6 glow-primary h-full flex flex-col justify-center">
                 {/* Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-3">
@@ -138,6 +138,20 @@ export default function Hero() {
                   </div>
                   <div>
                     result = agent.<span className="text-primary">invoke</span>(query)
+                  </div>
+                  <div className="h-4" />
+                  <div className="text-muted-foreground"># Process and analyze output</div>
+                  <div>
+                    <span className="text-secondary">if</span> result.success:
+                  </div>
+                  <div className="pl-4">
+                    data = <span className="text-secondary">extract_insights</span>(result.data)
+                  </div>
+                  <div className="pl-4">
+                    dashboard.<span className="text-primary">update_metrics</span>(data)
+                  </div>
+                  <div className="pl-4">
+                    <span className="text-secondary">print</span>(<span className="text-accent">f"Analysis complete: {"{"}data.accuracy{"}"}%"</span>)
                   </div>
                 </div>
               </div>
@@ -195,22 +209,25 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-        >
-          <span className="text-xs text-muted-foreground uppercase tracking-widest">Scroll</span>
+        {/* Scroll Indicator positioned relative to the container */}
+        <div className="mt-12 flex justify-center">
           <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+            className="flex flex-col items-center gap-2"
           >
-            <ChevronRight className="w-5 h-5 text-muted-foreground rotate-90" />
+            <span className="text-xs text-muted-foreground uppercase tracking-widest">Scroll</span>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <ChevronRight className="w-5 h-5 text-muted-foreground rotate-90" />
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
+
     </section>
   );
 }
