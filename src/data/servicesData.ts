@@ -84,12 +84,12 @@ I help small and medium businesses identify their biggest time-wasters and build
     ],
     technologies: ['Agentic Workflows', 'Vision LLMs', 'OCR Data Extraction', 'Make/n8n/Zapier', 'Python', 'Document AI'],
     architectureDiagram: `graph TD
-    A[Incoming Email with PDF Invoice] --> B(AI Document Reader)
-    B -->|Extracts Data| C{Needs Human Approval?}
-    C -->|No| E[(Accounting Software e.g. Xero)]
-    C -->|Yes| D[Review Dashboard for Staff]
-    D -->|Approved| E
-    E --> F[Automated Confirmation Reply]
+    A["Incoming Email with PDF"] --> B("AI Document Reader")
+    B -->|"Extracts Data"| C{"Needs Approval?"}
+    C -->|"Yes"| D["Review Dashboard"]
+    D -->|"Approved"| E[("Accounting System")]
+    C -->|"No"| E
+    E --> F["Automated Reply"]
 
     style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
     style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
@@ -128,11 +128,11 @@ It reads all your internal documents securely and lets your team ask questions i
     ],
     technologies: ['Semantic Search', 'Pinecone/Milvus', 'Embeddings Models', 'LlamaIndex', 'RAG pipelines', 'Python'],
     architectureDiagram: `graph TD
-    A["Your Company Documents (PDFs, Word, etc.)"] --> B(Secure AI Index)
-    C[Staff Member Asks a Question] --> D(AI Search Engine)
-    D -->|Finds Relevant Info| B
-    B -->|Returns Exact Paragraphs| E[AI Formats the Answer]
-    E -->|Provides Answer + Document Link| C
+    A["Company Documents"] --> B("Secure AI Index")
+    C["Staff Member"] -->|"Asks Question"| D("AI Search Engine")
+    D -->|"Finds Info"| B
+    B -->|"Returns Data"| E["AI Formatter"]
+    E -->|"Provides Answer"| C
 
     style A fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
     style B fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
@@ -211,11 +211,11 @@ I build custom bridges between your existing software. Whether it's making sure 
       'Creating centralized dashboards from different data sources'
     ],
     technologies: ['Event-Driven Architecture', 'Serverless Functions', 'Webhooks', 'REST/GraphQL APIs', 'Python', 'Node.js'],
-    architectureDiagram: `graph LR
-    A[Your Website / Storefront] -->|New Order| B(Custom Integration Bridge)
-    B -->|Updates Stock| C[Inventory System]
-    B -->|Creates Invoice| D[Accounting Software]
-    B -->|Adds Customer| E[CRM System]
+    architectureDiagram: `graph TD
+    A["Your Website / Storefront"] -->|"New Order"| B("Integration Bridge")
+    B -->|"Updates Stock"| C["Inventory System"]
+    B -->|"Creates Invoice"| D["Accounting Software"]
+    B -->|"Adds Customer"| E["CRM System"]
 
     style A fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
     style B fill:#fff3e0,stroke:#ff9800,stroke-width:2px
