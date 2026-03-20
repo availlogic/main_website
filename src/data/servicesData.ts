@@ -44,7 +44,7 @@ Whether it's a website widget to help online shoppers or a WhatsApp bot for appo
     technologies: ['LLMs (Llama 3, GPT-4, Claude 3)', 'RAG', 'LangChain/LangGraph', 'Vector Databases', 'Python', 'FastAPI'],
     architectureDiagram: `graph TD
     A[Customer on Website/WhatsApp] -->|Asks Question| B(Smart AI Chatbot)
-    B -->|Checks Knowledge| C[(Your Business Info & FAQs)]
+    B -->|Checks Knowledge| C[("Your Business Info & FAQs")]
     C -->|Provides Answer| B
     B -->|If Simple| A
     B -.->|If Complex or Requested| D[Human Support Staff]
@@ -128,7 +128,7 @@ It reads all your internal documents securely and lets your team ask questions i
     ],
     technologies: ['Semantic Search', 'Pinecone/Milvus', 'Embeddings Models', 'LlamaIndex', 'RAG pipelines', 'Python'],
     architectureDiagram: `graph TD
-    A[Your Company Documents (PDFs, Word, etc.)] --> B(Secure AI Index)
+    A["Your Company Documents (PDFs, Word, etc.)"] --> B(Secure AI Index)
     C[Staff Member Asks a Question] --> D(AI Search Engine)
     D -->|Finds Relevant Info| B
     B -->|Returns Exact Paragraphs| E[AI Formats the Answer]
@@ -172,7 +172,7 @@ These aren't the frustrating "Press 1 for Sales" robot menus of the past. These 
     architectureDiagram: `graph TD
     A[Customer Calls Your Number] --> B(AI Voice Receptionist)
     B -->|Listens & Speaks Naturally| A
-    B -.->|Checks Info| C[(Your Business Details/Calendar)]
+    B -.->|Checks Info| C[("Your Business Details/Calendar")]
     B -->|Takes Message/Details| D(System creates Call Summary)
     D -->|Sends SMS/Email Alert| E[Business Owner / Staff]
 
