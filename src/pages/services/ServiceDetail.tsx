@@ -101,8 +101,10 @@ export default function ServiceDetail() {
               <h2 className="text-2xl font-bold font-heading mb-6">
                 System Architecture
               </h2>
-              <div className="bg-surface/50 rounded-xl p-6 overflow-x-auto">
-                <Mermaid chart={service.architectureDiagram} />
+              <div className="bg-surface/50 rounded-xl p-6 overflow-x-auto flex justify-center">
+                <div className="w-full lg:max-w-xl">
+                  <Mermaid chart={service.architectureDiagram} />
+                </div>
               </div>
             </motion.div>
           </div>

@@ -41,7 +41,7 @@ Whether it's a website widget to help online shoppers or a WhatsApp bot for appo
       'Answering common product or service questions',
       'Internal staff helper for basic company info'
     ],
-    technologies: ['OpenAI/GPT', 'Anthropic/Claude', 'LangChain', 'Python', 'FastAPI'],
+    technologies: ['LLMs (Llama 3, GPT-4, Claude 3)', 'RAG', 'LangChain/LangGraph', 'Vector Databases', 'Python', 'FastAPI'],
     architectureDiagram: `graph TD
     A[Customer on Website/WhatsApp] -->|Asks Question| B(Smart AI Chatbot)
     B -->|Checks Knowledge| C[(Your Business Info & FAQs)]
@@ -82,7 +82,7 @@ I help small and medium businesses identify their biggest time-wasters and build
       'Generating weekly sales or inventory reports',
       'Updating stock levels across different platforms'
     ],
-    technologies: ['Python', 'n8n', 'OpenAI/GPT', 'Document AI'],
+    technologies: ['Agentic Workflows', 'Vision LLMs', 'OCR Data Extraction', 'Make/n8n/Zapier', 'Python', 'Document AI'],
     architectureDiagram: `graph TD
     A[Incoming Email with PDF Invoice] --> B(AI Document Reader)
     B -->|Extracts Data| C{Needs Human Approval?}
@@ -126,7 +126,7 @@ It reads all your internal documents securely and lets your team ask questions i
       'Training and onboarding tool for new hires',
       'Searching through years of past project proposals or reports'
     ],
-    technologies: ['LangChain', 'OpenAI/Claude', 'Vector Databases', 'Python'],
+    technologies: ['Semantic Search', 'Pinecone/Milvus', 'Embeddings Models', 'LlamaIndex', 'RAG pipelines', 'Python'],
     architectureDiagram: `graph TD
     A[Your Company Documents (PDFs, Word, etc.)] --> B(Secure AI Index)
     C[Staff Member Asks a Question] --> D(AI Search Engine)
@@ -168,7 +168,7 @@ These aren't the frustrating "Press 1 for Sales" robot menus of the past. These 
       'Providing quick updates on order or repair status',
       'Taking detailed messages when staff are in meetings'
     ],
-    technologies: ['Voice AI Platforms', 'Speech-to-Text', 'Text-to-Speech', 'Python'],
+    technologies: ['Real-time WebRTC', 'ElevenLabs TTS', 'Deepgram STT', 'Vapi/Bland AI', 'Conversational AI', 'Python'],
     architectureDiagram: `graph TD
     A[Customer Calls Your Number] --> B(AI Voice Receptionist)
     B -->|Listens & Speaks Naturally| A
@@ -210,7 +210,7 @@ I build custom bridges between your existing software. Whether it's making sure 
       'Connecting supplier emails directly to stock management',
       'Creating centralized dashboards from different data sources'
     ],
-    technologies: ['REST APIs', 'Webhooks', 'Python', 'Node.js', 'Automation Platforms'],
+    technologies: ['Event-Driven Architecture', 'Serverless Functions', 'Webhooks', 'REST/GraphQL APIs', 'Python', 'Node.js'],
     architectureDiagram: `graph LR
     A[Your Website / Storefront] -->|New Order| B(Custom Integration Bridge)
     B -->|Updates Stock| C[Inventory System]
