@@ -102,14 +102,14 @@ export default function Services() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-white/10 mb-6">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">What I Do</span>
+            <span className="text-sm text-muted-foreground">What We Do</span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6">
             AI-Powered Solutions for{' '}
             <span className="gradient-text">Modern Business</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            I specialize in building production-ready AI systems that automate processes, enhance customer experiences, and drive operational efficiency.
+            We specialize in building production-ready AI systems that automate processes, enhance customer experiences, and drive operational efficiency.
           </p>
         </motion.div>
 

@@ -20,7 +20,7 @@ export const services: Service[] = [
     title: 'AI Chatbots & Conversational Interfaces',
     slug: 'ai-chatbots-conversational-interfaces',
     description: 'Provide instant, 24/7 customer support with smart chatbots that understand your business and answer customer queries naturally.',
-    longDescription: `AI-powered chatbots are no longer just for big tech companies—they are an essential tool for local businesses looking to improve customer service without expanding their headcount. I build smart conversational assistants that understand the context of your business, answer repetitive questions accurately, and know exactly when to hand a complex issue over to your human team.
+    longDescription: `AI-powered chatbots are no longer just for big tech companies—they are an essential tool for local businesses looking to improve customer service without expanding their headcount. We build smart conversational assistants that understand the context of your business, answer repetitive questions accurately, and know exactly when to hand a complex issue over to your human team.
 
 Whether it's a website widget to help online shoppers or a WhatsApp bot for appointment scheduling, these systems feel natural to your customers while freeing up your staff to focus on the work that really matters.`,
     features: [
@@ -63,7 +63,7 @@ Whether it's a website widget to help online shoppers or a WhatsApp bot for appo
     description: 'Eliminate repetitive manual tasks like data entry and document processing, freeing your team to focus on growing the business.',
     longDescription: `Every business has those repetitive, frustrating tasks—copying data from emails into spreadsheets, manually creating invoices, or sorting through PDF attachments. Smart Business Automation uses AI to take over these chores, working faster and with fewer errors than a human ever could.
 
-I help small and medium businesses identify their biggest time-wasters and build secure, automated workflows to handle them. This isn't about replacing staff; it's about giving them back the hours they need to focus on your customers and grow your revenue.`,
+We help small and medium businesses identify their biggest time-wasters and build secure, automated workflows to handle them. This isn't about replacing staff; it's about giving them back the hours they need to focus on your customers and grow your revenue.`,
     features: [
       'Automated data extraction from PDFs, receipts, and invoices',
       'Email sorting and automated draft replies',
@@ -191,7 +191,7 @@ These aren't the frustrating "Press 1 for Sales" robot menus of the past. These 
     description: 'Make your different software systems talk to each other to stop double-entry and keep your business data perfectly synchronized.',
     longDescription: `Most businesses use several different tools to run their operations—a website, a CRM, an accounting package, and a booking system. When these systems don't talk to each other, you end up doing the tedious work of copying data from one to the other.
 
-I build custom bridges between your existing software. Whether it's making sure a sale on your Shopify store automatically updates your inventory and creates an invoice in Xero, or automatically adding new email leads to your CRM, these integrations save time, reduce errors, and let your software work for you, not the other way around.`,
+We build custom bridges between your existing software. Whether it's making sure a sale on your Shopify store automatically updates your inventory and creates an invoice in Xero, or automatically adding new email leads to your CRM, these integrations save time, reduce errors, and let your software work for you, not the other way around.`,
     features: [
       'Connecting platforms that don\'t normally integrate',
       'Real-time data synchronization across your business',
@@ -211,7 +211,7 @@ I build custom bridges between your existing software. Whether it's making sure 
       'Creating centralized dashboards from different data sources'
     ],
     technologies: ['Event-Driven Architecture', 'Serverless Functions', 'Webhooks', 'REST/GraphQL APIs', 'Python', 'Node.js'],
-    architectureDiagram: `graph LR
+    architectureDiagram: `graph TD
     A[Your Website / Storefront] -->|New Order| B(Custom Integration Bridge)
     B -->|Updates Stock| C[Inventory System]
     B -->|Creates Invoice| D[Accounting Software]

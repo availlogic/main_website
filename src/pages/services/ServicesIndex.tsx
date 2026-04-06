@@ -23,7 +23,7 @@ export default function ServicesIndex() {
             <span className="gradient-text">Modern Business</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            Explore my comprehensive range of AI and data services. Each solution is designed to solve real business problems and deliver measurable results.
+            Explore our comprehensive range of AI and data services. Each solution is designed to solve real business problems and deliver measurable results.
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ export default function ServicesIndex() {
               Not Sure Which Solution Fits Your Needs?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Let's discuss your specific challenges. I can help identify the best approach to solve your business problems.
+              Let's discuss your specific challenges. We can help identify the best approach to solve your business problems.
             </p>
             <a
               href="https://calendly.com/availlogic/book"

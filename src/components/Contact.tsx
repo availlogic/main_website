@@ -69,7 +69,7 @@ export default function Contact() {
             <span className="gradient-text">AI-Driven Future</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Ready to start your project or just want to learn more? I'd love to hear from you.
+            Ready to start your project or just want to learn more? We'd love to hear from you.
           </p>
         </motion.div>
 
@@ -87,7 +87,7 @@ export default function Contact() {
               </h3>
 
               <p className="text-muted-foreground mb-8">
-                Whether you have a specific project in mind or just want to explore what's possible, I'm here to help.
+                Whether you have a specific project in mind or just want to explore what's possible, we're here to help.
               </p>
 
               {/* Contact Methods */}
@@ -117,7 +117,7 @@ export default function Contact() {
 
               {/* Social Links */}
               <div className="pt-8 border-t border-white/10">
-                <div className="text-sm text-muted-foreground mb-4">Connect with me</div>
+                <div className="text-sm text-muted-foreground mb-4">Connect with us</div>
                 <div className="flex gap-4">
                   <a
                     href="https://www.linkedin.com/company/availlogic"
@@ -258,7 +258,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg bg-surface-light/50 border border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell us about your project..."
                   />
                 </div>
 

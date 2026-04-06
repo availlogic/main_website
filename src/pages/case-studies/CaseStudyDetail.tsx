@@ -276,7 +276,7 @@ export default function CaseStudyDetail() {
                 Want Similar Results?
               </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Let's discuss how I can achieve this for your business.
+                Let's discuss how we can achieve this for your business.
               </p>
               <a
                 href="https://calendly.com/availlogic/book"

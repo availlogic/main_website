@@ -185,7 +185,7 @@ export default function ServiceDetail() {
                 Interested in This Solution?
               </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Let's discuss how I can help implement this for your specific needs.
+                Let's discuss how we can help implement this for your specific needs.
               </p>
               <a
                 href="https://calendly.com/availlogic/book"

@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
             <span className="gradient-text">AI & Data</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            I translate complex AI requirements into production-ready systems. My expertise is building the intelligent automation that drives operational efficiency.
+            We translate complex AI requirements into production-ready systems. Our expertise is building the intelligent automation that drives operational efficiency.
           </p>
         </motion.div>
 
